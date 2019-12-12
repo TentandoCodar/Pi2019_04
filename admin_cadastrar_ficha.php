@@ -26,19 +26,16 @@
             <div class="col-sm pt-5 pb-5">
               <input id="name" type="text" name="" value="" class="inputadmin2" placeholder="Nome da Peça">
             </div>
-           
-          </div>
-          <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="code" type="text" name="" value="" class="inputadmin2" placeholder="Referencia">
-            </div>
-            <div class="col-sm pt-5 pb-5">
-              <input id="date" type="text" name="" value="" class="inputadmin2" placeholder="Data">
+              <input id="description" type="text" name="" value="" class="inputadmin2" placeholder="Descrição da peça">
             </div>
           </div>
           <div class="row">
-            <div class="col-sm pt-5 pb-5" style="margin-left: 0; margin-right: 0; padding-right: 0; padding-left: 0">
-              <input id="description" type="text" name="" value="" class="inputadmin2" placeholder="Descrição da Peça">
+            <div class="col-sm pt-5 pb-5">
+              <input disabled id="code" type="text" name="" value="" class="inputadmin2" placeholder="Referencia">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <input disabled id="date" type="text" name="" value="" class="inputadmin2" placeholder="Data">
             </div>
           </div>
           <div class="row">
@@ -48,63 +45,10 @@
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="file" name="" value="" class="input_file" placeholder="Descrição da Peça">
+              <input id="file1" type="file" name="" value="" class="input_file" placeholder="Descrição da Peça">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="file" name="" value="" class="input_file" placeholder="Descrição da Peça">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-3">
-              <h3 style="color: #000; font-weight: 700; font-family: 'GT Walsheim'">FRANQUIAS</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 1">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 2">
-            </div>
-            <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 3">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Modelista">
-            </div>
-            
-          </div>
-          
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Observações">
-            </div>
-            <div class="col-sm pt-5 pb-5">
-              <input id="hourAmount" type="text" name="" value="" class="inputadmin2" placeholder="Horas trabalhadas">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <!-- VALOR FIXO -->
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Custo de Mão-De-Obra (por peça)">
-            </div>
-            <div class="col-sm pt-5 pb-5">
-              <!-- VALOR FIXO -->
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Custo">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <!-- VALOR FIXO -->
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Divisor Padrão">
-            </div>
-            <div class="col-sm pt-5 pb-5">
-              <!-- VALOR FIXO -->
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Venda">
+              <input id="file2" type="file" name="" value="" class="input_file" placeholder="Descrição da Peça">
             </div>
           </div>
           <div class="row">
@@ -112,17 +56,12 @@
               <h3 style="color: #000; font-weight: 700; font-family: 'GT Walsheim'">PRODUTO</h3>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <select name="" id="">
-                <option value="">Descrição</option>
-              </select>
-            </div>
-          </div>
+          
           <div class="row">
             <div class="col-sm pt-5 pb-5">
               <input id="productAmount" type="text" name="" value="" class="inputadmin2" placeholder="Numero de produtos">
             </div>
+            
             <div  class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
               <button id="AmountSelectButton">Setar</button>
@@ -131,10 +70,63 @@
           <div class="row">
             <div id="ProductsSelect" class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
-              
             </div>
             
           </div>
+          <div class="row">
+            <div class="col-sm pt-5 pb-3">
+              <h3 style="color: #000; font-weight: 700; font-family: 'GT Walsheim'">FRANQUIAS</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm pt-5 pb-5">
+              <input id="seal1" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 1">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <input id="seal2" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 2">
+            </div>
+          </div>
+          <div class="row">
+            
+            <div class="col-sm pt-5 pb-5">
+              <input id="seal3" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 3">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <input id="modelist" type="text" name="" value="" class="inputadmin2" placeholder="Modelista">
+            </div>
+          </div>
+          
+          
+          <div class="row">
+            <div class="col-sm pt-5 pb-5">
+              <input id="observations" type="text" name="" value="" class="inputadmin2" placeholder="Observações">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <input id="hourAmount" type="text" name="" value="" class="inputadmin2" placeholder="Horas trabalhadas">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm pt-5 pb-5">
+              <!-- VALOR FIXO -->
+              <input disabled id="laborCost" type="text" name="" value="" class="inputadmin2" placeholder="Custo de Mão-De-Obra (por peça)">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <!-- VALOR FIXO -->
+              <input disabled id="priceCost" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Custo">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm pt-5 pb-5">
+              <!-- VALOR FIXO -->
+              <input id="standartDivisor" type="text" name="" value="" class="inputadmin2" placeholder="Divisor Padrão">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <!-- VALOR FIXO -->
+              <input id="salePrice" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Venda">
+            </div>
+          </div>
+          
+          
           
           <div class="row">
             <div class="col-sm pt-5 pb-5">
