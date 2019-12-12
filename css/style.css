@@ -1,0 +1,2019 @@
+@font-face {
+     font-family: 'Super Display';
+     src: url('../fonts/gtsuperdisplay.otf');
+}
+
+@font-face {
+     font-family: 'GT Walsheim';
+     src: url('../fonts/gtwalsheimmedium.otf');
+}
+
+@font-face {
+     font-family: 'GT Walsheim Light';
+     src: url('../fonts/gtwalsheimlight2.otf');
+}
+
+textarea:focus,
+    input:focus,
+    select:focus {
+      border-color: none !important;
+      outline: 0;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+
+    @keyframes spin {
+     0% {
+      transform: rotateZ(0deg);
+     }
+     100% {
+      transform: rotateZ(360deg);
+     }
+    }
+
+    .animacaoindex{
+      animation: spin 10s linear infinite;
+    }
+
+/*---------------------------- CELULAR -------------------------------*/
+
+@media (max-width: 800px) {
+  .corteste{
+    background-color: red;
+  }
+
+  .style_menu_pages_pc{
+    z-index: -2000;
+    position: fixed;
+    opacity: 0;
+    color: #292929;
+    transition: 0.6s;
+    display: none;
+    top: -199px;
+  }
+
+  .style_menu_pc{
+    z-index: -2000;
+    position: fixed;
+    opacity: 1;
+    color: #292929;
+    transition: 0.6s;
+    display: none;
+    top: -199px;
+  }
+
+  .style_menu_pages_cel{
+    z-index: 1000;
+    top: 0px;
+    position: fixed;
+    opacity: 1;
+    color: #383838;
+    background-color: #f2f2f2;
+    transition: 0.6s;
+  }
+
+  .style_menu_cel{
+    z-index: 1000;
+    top: 0px;
+    position: fixed;
+    opacity: 1;
+    color: #383838;
+    background-color: #f2f2f2;
+    transition: 0.6s;
+  }
+
+  .style_menu_cel2{
+    z-index: 1000;
+    top: 0px;
+    position: fixed;
+    opacity: 1;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.6s;
+  }
+
+  .style_menu_cel2_amimate{
+    z-index: 1000;
+    top: 0px;
+    position: fixed;
+    opacity: 1;
+    color: #000;
+    background-color: #f2f2f2;
+    transition: 0.6s;
+  }
+
+  .link_menu_pages{
+    color: #4f4f4f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px
+  }
+
+  .link_menu_pages:hover{
+    color: #4f4f4f;
+    text-decoration: none;
+  }
+
+  .link_menu_cel{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'GT Walsheim';
+    transition: 0.5s;
+  }
+
+  .link_menu_cel:hover{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    filter: blur(1px);
+    transition: 0.5s;
+  }
+
+  .iconemenu{
+    color: #fff;
+  }
+
+  .botao_menu{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    color: #000;
+    font-weight: bold;
+    border: solid #000 3px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+  }
+
+  .botao_menu2{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    border: solid rgba(0, 0, 0, 0.7) 1px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    font-size: 15px;
+  }
+
+  .botao_menu2:hover {
+    background-color: rgba(0, 0, 0, 95);
+    box-shadow: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    border: solid rgba(0, 0, 0, 0.7) 1px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    transition: 0.4s;
+  }
+
+  .menu_cel{
+    z-index: 1090;
+    transform: translate3d(120%, 0, 0);
+    opacity: 0;
+    width: 85%;
+    position: fixed;
+    transition: 0.5s;
+    right: 0;
+    font-family: 'GT Walsheim';
+  }
+
+  .menu_cel_animate{
+    z-index: 1090;
+    position: fixed;
+    opacity: 1;
+    transition: 0.5s;
+    width: 85%;
+    background: black;
+    transform: translate3d(0, 0, 0);
+    right: 0;
+    font-family: 'GT Walsheim';
+
+  }
+
+  .bordafiltro{
+    border: 1px solid #c4c4c4;
+  }
+
+  .filtros_pc{
+    position: fixed;
+    top: -100px;
+  }
+
+  .filtro_categorias_cel_animate{
+    background-color: #fff;
+    z-index: 2000;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    bottom: 0;
+    transition: 0.4s;
+  }
+
+  .filtro_categorias_cel{
+    background-color: #fff;
+    position: fixed;
+    top: -100%;
+    opacity: 0;
+    display: none;
+  }
+
+  .tendencias_tela{
+    background-image: linear-gradient(60deg, #fff, #8ca8c0);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .modal_tendencia{
+    z-index: 2000;
+    top: 0;
+    transform: translate3d(-100%, 0, 0);
+    transition: 0.6s;
+  }
+
+  .modal_tendencia_animate{
+    z-index: 2000;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    transition: 0.6s;
+  }
+
+  .escurecer{
+    background-color: rgba(0, 0, 0, 0.0);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .escurecer_animate{
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1999;
+    opacity: 1;
+    top: 0;
+    transition: 1s;
+  }
+
+  .text_modal_titulo{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .text_modal_tendencias_titulo{
+    font-size: 20px;
+    font-family: 'Super Display'
+  }
+
+  .text_modal_texto{
+    font-size: 14px;
+  }
+
+  .planilha{
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    color: #000;
+  }
+
+  .form_style{
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    color: #000;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .input_file{
+    font-size: 10px;
+  }
+
+  .inputadmin2{
+    color: black;
+    width: 80%;
+    font-family: 'GT Walsheim';
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(0,0,0,0);
+  }
+
+  .inputadmin{
+    color: white;
+    width: 70%;
+    font-family: 'GT Walsheim';
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(0,0,0,0);
+  }
+
+  .opcoes{
+    position: fixed;
+    color: #fff;
+    opacity: 0;
+    z-index: -20;
+  }
+
+  .opcoes_animate{
+    position: fixed;
+    color: #fff;
+    opacity: 1;
+    z-index: 29;
+    transition: 0.5s;
+  }
+
+  .botao_more{
+    background: black;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 30;
+  }
+
+  .botao_more_animate{
+    background: black;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: -30;
+    opacity: 0;
+  }
+
+  .botao_menos{
+    background: black;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+    z-index: -30;
+    opacity: 0;
+  }
+
+  .botao_menos_animate{
+    background: black;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 30;
+    cursor: pointer;
+  }
+
+  .fundopreto{
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    opacity: 0;
+    z-index: -20;
+  }
+
+  .fundopreto_animate{
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    opacity: 1;
+    z-index: 29;
+    transition: 0.5s;
+  }
+
+  .opcao_clicavel{
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  }
+
+  .person{
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    float: left;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    cursor: pointer
+  }
+
+  .barradepesquisa_animate{
+    top: 0;
+    transform: translateY(0);
+    z-index: 90;
+    background: #fff;
+    transition: 0.5s;
+  }
+
+  .barradepesquisa{
+    transform: translateY(-100%);
+    z-index: -100;
+    transition: 0.5s
+  }
+
+  .inputadmin,
+  ::-webkit-input-placeholder {
+     color: rgba(255, 255, 255, 0.5);
+  }
+
+  .inputadmin2,
+  ::-webkit-input-placeholder {
+     color: rgba(0, 0, 0, 0.5);
+  }
+
+  .planilhacomputador{
+    opacity: 0;
+    z-index: -20;
+    position: fixed;
+    left: 0px;
+    background-image: linear-gradient(60deg, #8ca8c0, #8ca8c0);
+  }
+
+  .modal_admin{
+    z-index: 2000;
+    transform: translate3d(-100%, 0, 0);
+    transition: 1s;
+    top: 0;
+  }
+
+  .modal_admin_animate{
+    z-index: 2000;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+  }
+
+  .modal_help{
+    z-index: 2000;
+    transform: translate3d(-100%, 0, 0);
+    transition: 1s;
+    top: 0;
+  }
+
+  .modal_help_animate{
+    z-index: 2000;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+  }
+
+  .style_modal{
+    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.96),rgba(0, 0, 0, 0.96));
+    color: #fff;
+  }
+
+  .style_modal_tendencia{
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    font-family: 'GT Walsheim Light';
+  }
+
+  .icone_modal{
+    top: 20px;
+    right: 20px;
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .icone_modal_tendencias{
+    top: 20px;
+    right: 20px;
+    font-size: 23px;
+    color: #000;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .links{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.5s;
+  }
+
+  .links:hover{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.5s;
+  }
+
+  .links_animate{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.5s;
+  }
+
+  .links_animate:hover{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.5s;
+  }
+
+  .link_logo{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+
+  .link_logo:hover{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+
+  .link_logo_animate{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+
+  .link_logo_animate:hover{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.5s;
+  }
+
+  .linksociais{
+    font-family: 'Super Display';
+    font-size: 14px;
+    color: #5e5b55;
+  }
+
+  .parteesquerda{
+    width: 100%;
+    background-color: #f2f2f2;
+    background-size: cover;
+  }
+
+  .partedireita{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .parte70{
+    width: 100%;
+    background-color: #f2f2f2;
+    font-family: 'GT Walsheim';
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .parte30{
+    display: none;
+  }
+
+  .links_revista{
+    color: #000;
+    font-family: 'Super Display';
+    font-size: 30px;
+    transition: 0.6s;
+  }
+
+  .links_revista:hover{
+    color: #000;
+    border-bottom: 2px solid #000;
+    font-family: 'Super Display';
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.6s;
+    filter: blur(1px);
+  }
+
+  .links_revista2{
+    color: #fff;
+    font-family: 'Super Display';
+    font-size: 30px;
+    transition: 0.6s;
+  }
+
+  .links_revista2:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-family: 'Super Display';
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.6s;
+    filter: blur(1px);
+  }
+
+
+
+  .wavestore{
+    font-family: 'Super Display';
+    font-size: 50px;
+    color: #000;
+  }
+
+  .wavestore2{
+    font-family: 'Super Display';
+    font-size: 50px;
+    color: #000;
+  }
+
+  .eprasumir{
+    display: none;
+  }
+
+  .flutuar{
+    display: none;
+  }
+
+  .flutuar2{
+    display: none;
+  }
+
+  .flutuar3{
+    position: absolute;
+    bottom: 190px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .flutuar4{
+    position: absolute;
+    bottom: 190px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .linha{
+    border-right: solid 1px #c9c3b8;
+  }
+
+  .card_admin{
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    color: #000;
+    cursor: pointer;
+  }
+
+  .help{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    font-family: 'GT Walsheim';
+    border-radius: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    z-index: 2000;
+  }
+
+  .circulo{
+    width: 160px;
+    height: 160px;
+    padding-top: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'GT Walsheim';
+    font-size: 16px;
+    color: #000;
+    z-index: 70;
+    display: none;
+  }
+
+  .circulo_animate{
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    padding-top: 75px;
+    transition: 0.5s;
+    cursor: pointer;
+    filter: blur(1px);
+    display: none;
+    z-index: 70;
+  }
+
+  .image_responsive{
+    width: 300px;
+  }
+
+  .title_responsive{
+    left: 0; top: -40px;
+  }
+
+  .title_responsive2{
+    left: 0; bottom: -48px;
+  }
+
+  .text_index{
+    font-family: 'Super Display'
+  }
+
+  .parte_oculta{
+    display: none;
+  }
+
+  .background_responsive{
+    background: #324664;
+    font-family: 'Super Display';
+    color: #fff;
+  }
+
+  .style_responsive{
+    display: none;
+  }
+
+  .descricao_produto{
+    padding-top: 50px;
+  }
+
+  .coluna_produtos{
+    text-align: left;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .collapse_produto{
+    margin-right: 10%;
+  }
+
+  .icon_produto{
+    right: 10%;
+  }
+
+  .tamanho{
+    border: 1px solid #b0b0b0;
+    width: 30px;
+    float: left;
+    margin-top: 3px
+  }
+
+  .tamanho_produtos{
+    text-align: center;
+  }
+
+  .img_produto{
+    width: 300px;
+  }
+
+  .display_info2{
+    display: none;
+  }
+
+  .img_tendencia{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(120px);
+    width: 200px;
+  }
+
+  .img_tendencia_animate{
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 2000;
+    transform: translateY(0px);
+    width: 250px;
+  }
+
+  .text_tendencia{
+    font-size: 35px;
+    font-family: 'Super Display';
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 220;
+  }
+
+  .text_tendencia_animate{
+    font-size: 35px;
+    font-family: 'Super Display';
+    cursor: pointer;
+    filter: blur(1px);
+    transition: 0.5s;
+    color: #000;
+    z-index: 220;
+  }
+
+  .text_tendencia_opacity{
+    font-size: 35px;
+    font-family: 'Super Display';
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  .display_pc_tendencias{
+    display: none;
+  }
+
+  .col_tendencias1{
+    text-align: center;
+  }
+
+  .col_tendencias2{
+    text-align: center;
+  }
+
+  .second_container_about{
+    display: none;
+  }
+
+  .text_about{
+    font-size: 40px;
+    font-family: 'Super Display';
+  }
+
+  .contact_container{
+    display: none
+  }
+
+  .circulo_about{
+    padding-top: 50px;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: 0.5s;
+    right: 7%;
+    bottom: 1%;
+  }
+
+  .circulo_about_animate{
+    padding-top: 75px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: solid 1px #000;
+    transition: 0.5s;
+    filter: blur(1px);
+    right: 7%;
+    bottom: 14%;
+  }
+
+  .subtitlte_about{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .text_responsive_index{
+    font-size: 12px;
+  }
+
+  .text_responsive_index2{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'GT Walsheim Light';
+  }
+
+  .anime{
+    transform: translate3d(0, 100px, 0);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .anime_start{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .anime_img{
+    transform: translate3d(0, -100px, 0);
+    opacity: 0;
+    transition: 2s;
+  }
+
+  .anime_img_start{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .anime_img2{
+    transform: translate3d(-20px, 0, 0);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .anime_img_start2{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .anime_img3{
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .anime_img_start3{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .footer_pc{
+    display: none;
+  }
+
+}
+
+/* ----------------------COMPUTADOR------------------------------------- */
+
+@media (min-width: 800px) {
+    .corteste{
+      background-color: red;
+    }
+
+    .style_menu_pages_cel{
+      z-index: -2000;
+      top: -70px;
+      position: absolute;
+      opacity: 1;
+      color: #383838;
+      display: none;
+    }
+
+    .style_menu_cel{
+      z-index: -2000;
+      top: -70px;
+      position: absolute;
+      opacity: 1;
+      color: #383838;
+      display: none;
+    }
+
+    .style_menu_cel2{
+      z-index: -2000;
+      top: -70px;
+      position: absolute;
+      opacity: 1;
+      color: #fff;
+      display: none;
+    }
+
+    .style_menu{
+      transition: 0.6s;
+    }
+
+    .style_menu_pages_pc{
+      transition: 0.6s;
+      color: #292929;
+      top: 0px;
+      z-index: 10;
+      position: fixed;
+      transition: 0.6s;
+      background-color: #f2f2f2;
+      transition: 0.6s;
+    }
+
+    .style_menu_pc{
+      z-index: 10;
+      top: 0px;
+      position: fixed;
+      opacity: 1;
+      color: #fff;
+      transition: 0.6s;
+    }
+
+    .style_menu_pc_animate{
+      z-index: 10;
+      top: 0px;
+      position: fixed;
+      opacity: 1;
+      color: #292929;
+      background-color: #f2f2f2;
+      transition: 0.6s;
+    }
+
+    .iconemenu{
+      color: #fff;
+    }
+
+    .botao_menu{
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: none;
+      color: #000;
+      font-weight: bold;
+      border: solid #000 3px;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 0.3%;
+      padding-bottom: 0.3%;
+    }
+
+    .botao_menu2{
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: none;
+      color: rgba(0, 0, 0, 1);
+      font-weight: bold;
+      border: solid rgba(0, 0, 0, 0.8) 1px;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 0.3%;
+      padding-bottom: 0.3%;
+    }
+
+    .botao_menu2:hover {
+      background-color: rgba(0, 0, 0, 95);
+      box-shadow: none;
+      color: rgba(255, 255, 255, 1);
+      font-weight: bold;
+      border: solid rgba(0, 0, 0, 0.7) 1px;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 0.3%;
+      padding-bottom: 0.3%;
+      transition: 0.4s;
+    }
+
+    .tamanho{
+      border: 1px solid #b0b0b0;
+      width: 30px;
+      float: left;
+      margin-top: 3px
+    }
+
+    .guia_galeria{
+      left: 0px;
+      width: 20%;
+      float: left;
+      position: fixed;
+      height: 100%;
+      padding-top: 8%;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+    .galeria_fotos{
+      padding-top: 8%;
+      padding-left: 3%;
+      padding-right: 3%;
+      width: 80%;
+      float: right;
+      right: 0px;
+      position: absolute;
+    }
+
+    .imagemout{
+      z-index: -3000;
+      position: absolute;
+      opacity: 0;
+    }
+
+    .imagemover{
+      z-index: 45;
+    }
+
+    .menu_cel{
+      position: absolute;
+      right: -100%;
+      z-index: 30;
+      opacity: 0;
+      transition: 0.5s;
+      display: none;
+    }
+
+    .menu_cel_animate{
+      z-index: 30;
+      position: fixed;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      width: 85%;
+      background: black;
+      right: 0;
+    }
+
+    .bordafiltro{
+      border: 1px solid #c4c4c4;
+    }
+
+    .filtros_cel{
+      position: fixed;
+      top: -100px;
+    }
+
+    .filtro_categorias_cel{
+      background-color: #fff;
+      z-index: -3000;
+      position: fixed;
+      top: -100%;
+      opacity: 0;
+      display: none;
+    }
+
+    .metadedatela{
+      height: 50%;
+    }
+
+    .tendencias_tela{
+      background-image: linear-gradient(60deg, #8ca8c0, #8ca8c0);
+       overflow-y: hidden;
+       overflow-x: hidden;
+    }
+
+    .modal_tendencia{
+      z-index: 2000;
+      transform: translate3d(0, 100%, 0);
+      transition: 0.86s;
+      top: 0;
+      opacity: 0;
+    }
+
+    .modal_tendencia_animate{
+      z-index: 2000;
+      top: 0;
+      transform: translate3d(0, 0, 0);
+      transition: 0.86s;
+      opacity: 1;
+    }
+
+    .escurecer{
+      background-color: rgba(0, 0, 0, 0.0);
+      opacity: 0;
+      transition: 1s;
+    }
+
+    .escurecer_animate{
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1999;
+      opacity: 1;
+      top: 0;
+      transition: 1s;
+    }
+
+    .text_modal_titulo{
+      font-size: 60px;
+      font-weight: 700;
+    }
+
+    .text_modal_tendencias_titulo{
+      font-size: 60px;
+      font-family: 'Super Display';
+    }
+
+    .text_modal_texto{
+      font-size: 17px;
+    }
+
+    .barradepesquisa_animate{
+      top: 0;
+      transform: translateY(0);
+      z-index: 90;
+      background: #fff;
+      transition: 0.5s;
+    }
+
+    .barradepesquisa{
+      transform: translateY(-100%);
+      z-index: -100;
+      transition: 0.5s
+    }
+
+    .menulateral{
+      left: 0;
+      background-color: #a3c8e6;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+
+    .partecentral{
+      height: 100%;
+      right: 0;
+      background-color: #fff;
+    }
+
+    .backback{
+      background-image: linear-gradient(30deg, #5f8fc8, #8ca8c0);
+    }
+
+    .input_julia{
+      width: 100%;
+      font-family: 'Raleway';
+      border-bottom: 1px white solid;
+      background-color: rgba(0,0,0,0);
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+
+    .person{
+      background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      width: 30%;
+      float: left;
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+
+    }
+
+    .inputadmin,
+    ::-webkit-input-placeholder {
+       color: rgba(255, 255, 255, 0.5);
+    }
+
+    .inputadmin2,
+    ::-webkit-input-placeholder {
+       color: rgba(0, 0, 0, 0.5);
+    }
+
+    .opcoes{
+      position: fixed;
+      color: #fff;
+      opacity: 0;
+      z-index: -20;
+    }
+
+    .opcoes_animate{
+      position: fixed;
+      color: #fff;
+      opacity: 1;
+      z-index: 29;
+      transition: 0.5s;
+    }
+
+    .botao_more{
+      background: black;
+      color: #fff;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 100%;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      z-index: 30;
+    }
+
+    .botao_more_animate{
+      background: black;
+      color: #fff;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 100%;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      z-index: -30;
+      opacity: 0;
+    }
+
+    .botao_menos{
+      background: black;
+      color: #fff;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 100%;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+      z-index: -30;
+      opacity: 0;
+    }
+
+    .botao_menos_animate{
+      background: black;
+      color: #fff;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 100%;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      z-index: 30;
+      cursor: pointer;
+    }
+
+    .fundopreto{
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      opacity: 0;
+      z-index: -20;
+    }
+
+    .fundopreto_animate{
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      opacity: 1;
+      z-index: 29;
+      transition: 0.5s;
+    }
+
+    .opcao_clicavel{
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 40px;
+      cursor: pointer;
+      box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .planilha{
+      background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      color: #000;
+    }
+
+    .form_style{
+      background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      color: #000;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    .inputadmin{
+      color: white;
+      width: 80%;
+      font-family: 'GT Walsheim';
+      border-bottom: 1px solid white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: rgba(0,0,0,0);
+    }
+
+    .inputadmin2{
+      color: black;
+      width: 80%;
+      font-family: 'GT Walsheim';
+      border-bottom: 1px solid black;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: rgba(0,0,0,0);
+    }
+
+    .planilhacelular{
+      opacity: 0;
+      z-index: -20;
+      position: fixed;
+      left: 0px;
+      background-image: linear-gradient(60deg, #8ca8c0, #8ca8c0);
+    }
+
+    .loader{
+      position: absolute;
+
+    }
+
+    .lds-facebook {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    .lds-facebook div {
+      display: inline-block;
+      position: absolute;
+      left: 8px;
+      width: 16px;
+      background: #000;
+      animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+    .lds-facebook div:nth-child(1) {
+      left: 8px;
+      animation-delay: -0.24s;
+    }
+    .lds-facebook div:nth-child(2) {
+      left: 32px;
+      animation-delay: -0.12s;
+    }
+    .lds-facebook div:nth-child(3) {
+      left: 56px;
+      animation-delay: 0;
+    }
+    @keyframes lds-facebook {
+      0% {
+        top: 8px;
+        height: 64px;
+      }
+      50%, 100% {
+        top: 24px;
+        height: 32px;
+      }
+    }
+
+    .modal_admin{
+      z-index: 2000;
+      transform: translate3d(-100%, 0, 0);
+      transition: 0.86s;
+      top: 0;
+    }
+
+    .modal_admin_animate{
+      z-index: 2000;
+      top: 0;
+      transform: translate3d(0, 0, 0);
+      transition: 0.86s;
+    }
+
+    .modal_help{
+      z-index: 2000;
+      transform: translate3d(-100%, 0, 0);
+      transition: 0.86s;
+      top: 0;
+    }
+
+    .modal_help_animate{
+      z-index: 2000;
+      top: 0;
+      transform: translate3d(0, 0, 0);
+      transition: 0.86s;
+      padding: 40px;
+    }
+
+    .style_modal{
+      background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.86),rgba(0, 0, 0, 0.86));
+      color: #fff;
+    }
+
+    .icone_modal{
+      top: 50px;
+      right: 60px;
+      font-size: 23px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .icone_modal_tendencias{
+      top: 50px;
+      right: 60px;
+      font-size: 23px;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .links a{
+      color: #000;
+      font-family: 'GT Walsheim';
+      font-weight: 400;
+      transition: 0.4s;
+      font-size: 16px;
+    }
+
+    .links:hover a{
+      color: #000;
+      font-family: 'GT Walsheim';
+      font-weight: 400;
+      transition: 0.4s;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .links_animate a{
+      color: #000;
+      font-family: 'GT Walsheim';
+      font-weight: 400;
+      transition: 0.4s;
+      font-size: 16px;
+      transition: 0.4s;
+    }
+
+    .links_animate:hover a{
+      color: #000;
+      font-family: 'GT Walsheim';
+      font-weight: 400;
+      transition: 0.4s;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.4s;
+    }
+
+    .link_logo{
+      color: #000;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 35px;
+      transition: 0.4s;
+    }
+
+    .link_logo:hover{
+      color: #000;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 35px;
+      text-decoration: none;
+      transition: 0.4s;
+    }
+
+    .link_logo_animate{
+      color: #000;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 35px;
+      transition: 0.4s;
+    }
+
+    .link_logo_animate:hover{
+      color: #000;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 35px;
+      text-decoration: none;
+      transition: 0.4s;
+    }
+
+    .linha{
+      border-right: solid 1px #c9c3b8;
+    }
+
+    .linksociais{
+      font-family: 'Super Display';
+      font-size: 17px;
+      color: #5e5b55;
+    }
+
+    .links_revista{
+      color: #000;
+      font-family: 'Super Display';
+      font-size: 30px;
+      transition: 0.6s;
+    }
+
+    .links_revista:hover{
+      color: #000;
+      border-bottom: 2px solid #000;
+      font-family: 'Super Display';
+      font-size: 30px;
+      text-decoration: none;
+      transition: 0.6s;
+      filter: blur(1px);
+    }
+
+    .links_revista2{
+      color: #fff;
+      font-family: 'Super Display';
+      font-size: 30px;
+      transition: 0.6s;
+    }
+
+    .links_revista2:hover{
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      font-family: 'Super Display';
+      font-size: 30px;
+      text-decoration: none;
+      transition: 0.6s;
+      filter: blur(1px);
+    }
+
+    .parteesquerda{
+      width: 50%;
+      height: 100%;
+      float: left;
+      background-image: url('../img/modelo1.jpg');
+      background-size: cover
+    }
+
+    .partedireita{
+      width: 50%;
+      height: 100%;
+      float: left;
+    }
+
+    .parte70{
+      height: 70%;
+      width: 100%;
+      background-color: #f2f2f2;
+      font-family: 'GT Walsheim';
+      font-weight: 400;
+      padding-left: 40%;
+      padding-right: 19%;
+      text-align: left;
+    }
+
+    .parte30{
+      height: 30%;
+      width: 100%;
+      background-image: url('../img/modelo1.jpg');
+      background-size: cover;
+    }
+
+    .imagem_fina{
+      display: none;
+    }
+
+    .todarevista{
+      right: 0;
+      left: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    .espacosumir{
+      display: none;
+      position: absolute;
+      z-index: -10;
+    }
+
+    .wavestore{
+      font-family: 'Super Display';
+      font-size: 100px;
+      color: #000;
+    }
+
+    .wavestore2{
+      font-family: 'Super Display';
+      font-size: 100px;
+      color: #000;
+    }
+
+    .card_admin{
+      background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      background-size: cover;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .espacodecima{
+      display: none;
+    }
+
+    .help{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #fff;
+      font-family: 'GT Walsheim';
+      border-radius: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      cursor: pointer;
+      z-index: 2000;
+    }
+
+    .circulo{
+      width: 160px;
+      height: 160px;
+      padding-top: 60px;
+      transition: 0.5s;
+      cursor: pointer;
+      font-family: 'GT Walsheim';
+      font-size: 16px;
+      z-index: 70;
+      color: #000;
+    }
+
+    .circulo_animate{
+      border-radius: 100%;
+      width: 180px;
+      height: 180px;
+      padding-top: 75px;
+      transition: 0.5s;
+      cursor: pointer;
+      z-index: 70;
+      filter: blur(1px);
+    }
+
+    .title_responsive{
+      display: none;
+    }
+
+    .title_responsive2{
+      display: none;
+    }
+
+    .text_index{
+      font-family: 'Super Display'
+    }
+
+    .text_responsive_index{
+      display: none;
+    }
+
+    .text_responsive_index2{
+      display: none;
+    }
+
+    .background_responsive{
+      background: #f2f2f2;
+      font-family: 'Super Display';
+    }
+
+    .descricao_produto{
+      padding-right: 50%;
+    }
+
+    .coluna_produtos{
+      text-align: left;
+    }
+
+    .collapse_produto{
+      margin-right: 20%;
+    }
+
+    .icon_produto{
+      right:20%;
+    }
+
+    .tamanho_produtos{
+      text-align: center;
+    }
+
+    .img_produto{
+      width: 500px;
+    }
+
+    .display_info{
+      display: none;
+    }
+
+    .overflow{
+      overflow-y: hidden;
+    }
+
+    .img_tendencia{
+      opacity: 0;
+      transition: 0.5s;
+      transform: translateY(120px);
+      width: 400px;
+    }
+
+    .img_tendencia_animate{
+      opacity: 1;
+      transition: 0.5s;
+      z-index: 2000;
+      transform: translateY(0px);
+      width: 450px;
+    }
+
+
+    .text_tendencia{
+      font-size: 95px;
+      font-family: 'Super Display';
+      cursor: pointer;
+      transition: 0.5s;
+      z-index: 220;
+    }
+
+    .text_tendencia_animate{
+      font-size: 95px;
+      font-family: 'Super Display';
+      cursor: pointer;
+      filter: blur(1px);
+      transition: 0.5s;
+      color: #000;
+      z-index: 220;
+    }
+
+    .text_tendencia_opacity{
+      font-size: 95px;
+      font-family: 'Super Display';
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.3);
+      transition: 0.5s;
+      z-index: 1;
+    }
+
+    .zindex{
+      left: 0px;
+      top: 0px;
+    }
+
+    .style_modal_tendencia{
+      background-color: rgba(245, 245, 245, 0.9);
+      color: #000;
+      font-family: 'GT Walsheim Light';
+    }
+
+    .text_about{
+      font-size: 60px;
+      font-family: 'Super Display';
+    }
+
+    .text_about_contact{
+      font-family: 'GT Walsheim';
+      font-size: 90px;
+      color: #000;
+    }
+
+    .input_about{
+      width: 60%;
+      border: none;
+      text-align: center;
+      font-family: 'GT Walsheim';
+      background: none;
+    }
+
+    .form_about{
+      border: 1px solid #c9c3b8;
+      margin-left: 20%;
+      margin-right: 20%;
+      color: #fff;
+    }
+
+    .subtitlte_about{
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
+    .circulo_about{
+      padding-top: 75px;
+      width: 180px;
+      height: 180px;
+      border-radius: 100%;
+      border: solid 1px #000;
+      cursor: pointer;
+      transition: 0.5s;
+      right: 7%;
+      bottom: 14%;
+    }
+
+    .circulo_about_animate{
+      padding-top: 90px;
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      border: solid 1px #000;
+      transition: 0.5s;
+      filter: blur(1px);
+      right: 7%;
+      bottom: 14%;
+    }
+
+    .second_container_about{
+      font-family: 'Super Display';
+    }
+
+    .descricao_about{
+      padding-right: 20%;
+    }
+
+    .subdescrition_about{
+      padding-right: 70%;
+      font-size: 16px;
+      font-family: 'GT Walsheim';
+    }
+
+    .descricao_about2{
+      padding-left: 20%;
+    }
+
+    .subdescrition_about2{
+      padding-left: 70%;
+      font-size: 16px;
+      font-family: 'GT Walsheim';
+    }
+
+    .col_tendencias1{
+      text-align: left;
+      padding-left: 40px;
+    }
+
+    .col_tendencias2{
+      text-align: right;
+      padding-right: 40px;
+    }
+
+    .container_cel_about{
+      display: none;
+    }
+
+    .modal_erro{
+      z-index: 2000;
+      transform: translate3d(-100%, 0, 0);
+      transition: 0.86s;
+      top: 0;
+    }
+
+    .modal_erro_animate{
+      z-index: 2000;
+      top: 0;
+      transform: translate3d(0, 0, 0);
+      transition: 0.86s;
+      padding: 10%;
+    }
+
+    [data-text_index]{
+      transform: translateY(120px);
+      opacity: 0;
+      transition: 1s;
+    }
+
+    .animate{
+      transform: translateY(0);
+      opacity: 1;
+      transition: 1s;
+    }
+
+    [data-img_index]{
+      width: 100px;
+      transition: 0.7s;
+      opacity: 0;
+    }
+
+    [data-img_index].transition{
+      width: 300px;
+      transition: 0.7s;
+      opacity: 1;
+    }
+
+    .parte_oculta{
+      font-family: 'GT Walsheim Light';
+      padding: 0;
+      margin: 0;
+    }
+
+    .coluna_index{
+      height: 70%;
+      padding-left: 30%;
+      padding-right: 40%;
+      color: #000
+    }
+
+    .anime{
+      transform: translate3d(0, 100px, 0);
+      opacity: 0;
+      transition: 1s;
+    }
+
+    .anime_start{
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      transition: 1s;
+    }
+
+    .anime_img{
+      transform: translate3d(0, -100px, 0);
+      opacity: 0;
+      transition: 2s;
+    }
+
+    .anime_img_start{
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      transition: 1s;
+    }
+
+    .anime_img2{
+      transform: translate3d(-100px, 0, 0);
+      opacity: 0;
+      transition: 1s;
+    }
+
+    .anime_img_start2{
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      transition: 1s;
+    }
+
+    .anime_img3{
+      transform: translate3d(100px, 0, 0);
+      opacity: 0;
+      transition: 1s;
+    }
+
+    .anime_img_start3{
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      transition: 1s;
+    }
+
+    .anime_background{
+      height: 30%;
+      background-image: url('../img/moca2.jpg');
+      background-size: cover;
+    }
+
+    .footer_cel{
+      display: none;
+    }
+
+
+}
