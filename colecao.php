@@ -39,31 +39,18 @@
         <div class="dropdown">
         <span class="pl-2 pr-3" style="font-size: 13px; font-weight: 400; cursor: pointer; color: #292929" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> CATEGORIA <i class="fas fa-caret-down"></i></span>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a style="font-size: 13px" class="dropdown-item">blusa</a>
-            <a style="font-size: 13px" class="dropdown-item">body</a>
-            <a style="font-size: 13px" class="dropdown-item">calçados</a>
-            <a style="font-size: 13px" class="dropdown-item">casaco</a>
-            <a style="font-size: 13px" class="dropdown-item">macacão</a>
-            <a style="font-size: 13px" class="dropdown-item">saia</a>
-            <a style="font-size: 13px" class="dropdown-item">short</a>
-            <a style="font-size: 13px" class="dropdown-item">vestido</a>
-            <a style="font-size: 13px" class="dropdown-item">calça</a>
+            <a href="colecao.php?type=blouse" style="font-size: 13px" class="dropdown-item">blusa</a>
+            <a href="colecao.php?type=body" style="font-size: 13px" class="dropdown-item">body</a>
+            <a href="colecao.php?type=shoe" style="font-size: 13px" class="dropdown-item">calçados</a>
+            <a href="colecao.php?type=coat" style="font-size: 13px" class="dropdown-item">casaco</a>
+            <a href="colecao.php?type=overall" style="font-size: 13px" class="dropdown-item">macacão</a>
+            <a href="colecao.php?type=skirt" style="font-size: 13px" class="dropdown-item">saia</a>
+            <a href="colecao.php?type=short" style="font-size: 13px" class="dropdown-item">short</a>
+            <a href="colecao.php?type=dress" style="font-size: 13px" class="dropdown-item">vestido</a>
+            <a href="colecao.php?type=pants" style="font-size: 13px" class="dropdown-item">calça</a>
           </div>
         </div>
-        <div class="dropdown">
-          <span class="pl-2 pr-3" style="font-size: 13px; font-weight: 400; cursor: pointer; color: #292929" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PREÇO <i class="fas fa-caret-down"></i></span>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <a style="font-size: 13px" class="dropdown-item">blusa</a>
-            <a style="font-size: 13px" class="dropdown-item">body</a>
-            <a style="font-size: 13px" class="dropdown-item">calçados</a>
-            <a style="font-size: 13px" class="dropdown-item">casaco</a>
-            <a style="font-size: 13px" class="dropdown-item">macacão</a>
-            <a style="font-size: 13px" class="dropdown-item">saia</a>
-            <a style="font-size: 13px" class="dropdown-item">short</a>
-            <a style="font-size: 13px" class="dropdown-item">vestido</a>
-            <a style="font-size: 13px" class="dropdown-item">calça</a>
-          </div>
-        </div>
+        
       </div>
       <div class="text-center pt-5 filtros_cel">
         <div class="row mr-5 ml-5">
@@ -126,18 +113,7 @@
         <hr>
         <div class="row" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
           <div class="col pl-5 pt-2 pr-5">
-            <p>Preço</p>
-            <div class="collapse" id="collapseExample7" style="background-color: #f2f2f2;">
-              <div class="card card-body" style="background-color: #f2f2f2;">
-                <a style="font-size: 13px" class="dropdown-item">R$50,00</a>
-                <a style="font-size: 13px" class="dropdown-item">R$100,00</a>
-                <a style="font-size: 13px" class="dropdown-item">R$150,00</a>
-                <a style="font-size: 13px" class="dropdown-item">R$200,00</a>
-                <a style="font-size: 13px" class="dropdown-item">R$250,00</a>
-                <a style="font-size: 13px" class="dropdown-item">R$300,00</a>
-                <a style="font-size: 13px" class="dropdown-item">R$350,00</a>
-              </div>
-            </div>
+            
           </div>
           <div class="col pl-5 pt-2 pr-5 text-right">
             <i class="fas fa-caret-down"></i>

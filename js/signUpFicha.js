@@ -14,7 +14,7 @@ window.onload = () => {
     let productsPriceArray = [];
     document.getElementById('date').value = date;
     submitButton.addEventListener('click', () => {
-        signUpImages();
+        signUpImages()
         
     })
 
@@ -61,22 +61,23 @@ window.onload = () => {
         firestore.collection('Costs').onSnapshot(snapshot => {
             snapshot.forEach(doc => {
                 const data = doc.data();
-                laborCost = data.laborCostBrute;
+                console.log(data)
+                laborCost = data.LaborCostBrute;
                 document.getElementById('laborCost').value = laborCost;
                 const totalComercializationCostPlaceholder = (
-                    data.AdministrativeExpenses + 
-                    data.Comissions + 
-                    data.DiverseExpenses + 
-                    data.FinancialExpenses + 
-                    data.FixedCosts + 
-                    data.Investments + 
-                    data.LaborCostBrute + 
-                    data.OperationalExpenses + 
-                    data.PaymentSheetBrute + 
-                    data.Theft +
-                    data.Transportation +
-                    data.Withdraw
-                );
+                    parseFloat(data.AdministrativeExpenses) + 
+                    parseFloat(data.Comissions) + 
+                    parseFloat(data.DiverseExpenses) + 
+                    parseFloat(data.FinancialExpenses) + 
+                    parseFloat(data.FixedCosts) + 
+                    parseFloat(data.Investments) + 
+                    parseFloat(data.LaborCostBrute) + 
+                    parseFloat(data.OperationalExpenses) + 
+                    parseFloat(data.PaymentSheetBrute) + 
+                    parseFloat(data.Theft) +
+                    parseFloat(data.Transportation) +
+                    parseFloat(data.WithDraw)
+                )
                 totalComercializationCost = totalComercializationCostPlaceholder;
                 profitMargin = data.ProfitMargin;
             }) 
@@ -87,12 +88,13 @@ window.onload = () => {
         const productAmount = document.getElementById('productAmount').value
         let productsCodeArray = [];
         let productsAmountArray = [];
+        materialPrice = 0;
         for(let b = 0; b < productAmount; b++) {
             
             const value = document.getElementById('input' + b).value;
             productsAmountArray.push(value);
         }
-        console.log(productAmount);
+        
         for(let i = 0; i < productAmount; i++) {
             
             const value = document.getElementById('select' + i).value;
@@ -109,6 +111,7 @@ window.onload = () => {
     }
 
     function submit(image1, image2) {
+        
         const productsCodeArray = getDataOfProductSelect();
         const price = materialPrice;
         const name = document.getElementById('name').value;
@@ -119,10 +122,13 @@ window.onload = () => {
         const seal3 = document.getElementById('seal3').value;
         const modelist = document.getElementById('modelist').value;
         const observations = document.getElementById('observations').value;
+        const type = document.getElementById('type').value;
+        console.log(type)
         document.getElementById('priceCost').value = parseFloat((laborCost * hourAmount) + materialPrice);
-        document.getElementById('standartDivisor').value = parseFloat(1 - (profitMargin / 100 + totalComercializationCost / 100));
+        
+        document.getElementById('standartDivisor').value = parseFloat( 1 - (parseFloat(totalComercializationCost / 100) + parseFloat(profitMargin / 100)));
         const priceCost = document.getElementById('priceCost').value;
-        const standartDivisor = document.getElementById('standartDivisor').value;
+        const standartDivisor = parseFloat(document.getElementById('standartDivisor').value);
         document.getElementById('salePrice').value = parseFloat(priceCost / standartDivisor);
         const salePrice = document.getElementById('salePrice').value;
         firestore.collection("Datasheet").add({
@@ -135,11 +141,13 @@ window.onload = () => {
             seal2,
             seal3,
             modelist,
+            hourAmount,
             observations,
             priceCost,
             standartDivisor,
             salePrice,
-            code: ""
+            code: "",
+            type
         }).then((resp) => {
             firestore.collection("Datasheet").doc(resp.id).update({
                 image1,

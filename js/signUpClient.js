@@ -11,7 +11,21 @@ window.onload = () => {
             const doc = document.getElementById(element).value;
 
             if(!doc) {
+                return null;
             }
+            if(element == "cnpj") {
+                if(doc.length != 14) {
+                    alert("CNPJ incompleto")
+                    return null;
+                }
+            }
+            if(element == "phone") {
+                if(doc.length != 11 ) {
+                    alert("Telefone incompleto")
+                    return null;
+                }
+            }
+
         })
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;

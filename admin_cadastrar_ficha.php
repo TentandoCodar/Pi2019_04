@@ -32,6 +32,22 @@
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <select id="type">
+                <option value="blouse">blusa</option>
+                <option value="body">body</option>
+                <option value="shoe">calçados</option>
+                <option value="coat">casaco</option>
+                <option value="overall">macacão</option>
+                <option value="skirt">saia</option>
+                <option value="short">short</option>
+                <option value="dress">vestido</option>
+                <option value="pants">calça</option>
+              </select>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-sm pt-5 pb-5">
               <input disabled id="code" type="text" name="" value="" class="inputadmin2" placeholder="Referencia">
             </div>
             <div class="col-sm pt-5 pb-5">
