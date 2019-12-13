@@ -10,10 +10,12 @@ window.onload = () => {
     let laborCost = 0;
     const date = new Date().toLocaleDateString('pt-BR');
     let totalComercializationCost = 0;
+    let profitMargin = 0;
+    let productsPriceArray = [];
     document.getElementById('date').value = date;
     submitButton.addEventListener('click', () => {
-        getDataOfProductSelect()
         signUpImages();
+        
     })
 
     amountSelectButton.addEventListener('click', () => {
@@ -29,8 +31,6 @@ window.onload = () => {
                 productsArray.push(doc.data());
                 
             });
-            
-            console.log(productsArray);
         })
     }
 
@@ -78,7 +78,7 @@ window.onload = () => {
                     data.Withdraw
                 );
                 totalComercializationCost = totalComercializationCostPlaceholder;
-                
+                profitMargin = data.ProfitMargin;
             }) 
         })
     }
@@ -88,25 +88,27 @@ window.onload = () => {
         let productsCodeArray = [];
         let productsAmountArray = [];
         for(let b = 0; b < productAmount; b++) {
+            
             const value = document.getElementById('input' + b).value;
             productsAmountArray.push(value);
         }
-        
+        console.log(productAmount);
         for(let i = 0; i < productAmount; i++) {
+            
             const value = document.getElementById('select' + i).value;
             const pricePlaceholder = productsArray[value].price;
             const codePlaceholder = productsArray[value].code;
+            
             const s = parseFloat(pricePlaceholder * productsAmountArray[i]);
-            materialPrice += s;
+            productsPriceArray.push(s);
+            materialPrice = materialPrice + s;
+            
             productsCodeArray.push(codePlaceholder);
         }
-
-        
-        
         return productsCodeArray;
     }
 
-    function submit() {
+    function submit(image1, image2) {
         const productsCodeArray = getDataOfProductSelect();
         const price = materialPrice;
         const name = document.getElementById('name').value;
@@ -118,7 +120,39 @@ window.onload = () => {
         const modelist = document.getElementById('modelist').value;
         const observations = document.getElementById('observations').value;
         document.getElementById('priceCost').value = parseFloat((laborCost * hourAmount) + materialPrice);
-        
+        document.getElementById('standartDivisor').value = parseFloat(1 - (profitMargin / 100 + totalComercializationCost / 100));
+        const priceCost = document.getElementById('priceCost').value;
+        const standartDivisor = document.getElementById('standartDivisor').value;
+        document.getElementById('salePrice').value = parseFloat(priceCost / standartDivisor);
+        const salePrice = document.getElementById('salePrice').value;
+        firestore.collection("Datasheet").add({
+            rawMaterial: productsCodeArray,
+            prices:productsPriceArray,
+            price,
+            name,
+            description,
+            seal1,
+            seal2,
+            seal3,
+            modelist,
+            observations,
+            priceCost,
+            standartDivisor,
+            salePrice,
+            code: ""
+        }).then((resp) => {
+            firestore.collection("Datasheet").doc(resp.id).update({
+                image1,
+                image2,
+                code: resp.id
+            }).then((resp) => {
+                window.location.href = "admin_ficha.php";
+            }).catch((err) => {
+                
+            })
+        }).catch((err) => {
+            
+        })
     }
 
     function signUpImages() {
@@ -139,7 +173,7 @@ window.onload = () => {
                     const referenceUrl2 = storageRef.child(resp.metadata.fullPath);
                     referenceUrl2.getDownloadURL().then((url) => {
                         imageRef.push(url);
-                        submit();
+                        submit(imageRef[0],imageRef[1]);
                     })
                 })
             })
