@@ -135,7 +135,7 @@ class User extends DomController{
 
     save(name,email, password, image) {
         const storageRef = this.storage.ref();
-        const originalName = image.name.split('.')
+        const originalName = image.name.split('.');
         const child = storageRef.child('userImages/' + originalName[0] + Date.now() + '.' + originalName[1]);
         let imageRef = "";
         child.put(image).then((resp) => {

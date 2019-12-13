@@ -9,10 +9,11 @@ window.onload = () => {
     let materialPrice = 0;
     let laborCost = 0;
     const date = new Date().toLocaleDateString('pt-BR');
+    let totalComercializationCost = 0;
     document.getElementById('date').value = date;
     submitButton.addEventListener('click', () => {
         getDataOfProductSelect()
-        submit();
+        signUpImages();
     })
 
     amountSelectButton.addEventListener('click', () => {
@@ -59,8 +60,25 @@ window.onload = () => {
     function getCosts() {
         firestore.collection('Costs').onSnapshot(snapshot => {
             snapshot.forEach(doc => {
-                laborCost = doc.data().laborCostBrute;
+                const data = doc.data();
+                laborCost = data.laborCostBrute;
                 document.getElementById('laborCost').value = laborCost;
+                const totalComercializationCostPlaceholder = (
+                    data.AdministrativeExpenses + 
+                    data.Comissions + 
+                    data.DiverseExpenses + 
+                    data.FinancialExpenses + 
+                    data.FixedCosts + 
+                    data.Investments + 
+                    data.LaborCostBrute + 
+                    data.OperationalExpenses + 
+                    data.PaymentSheetBrute + 
+                    data.Theft +
+                    data.Transportation +
+                    data.Withdraw
+                );
+                totalComercializationCost = totalComercializationCostPlaceholder;
+                
             }) 
         })
     }
@@ -93,16 +111,42 @@ window.onload = () => {
         const price = materialPrice;
         const name = document.getElementById('name').value;
         const description = document.getElementById('description').value;
-        const file1 = document.getElementById('file1').files[0];
-        const file2 = document.getElementById('file2').files[0];
         const hourAmount = document.getElementById('hourAmount').value;
         const seal1 = document.getElementById('seal1').value;
         const seal2 = document.getElementById('seal2').value;
         const seal3 = document.getElementById('seal3').value;
         const modelist = document.getElementById('modelist').value;
         const observations = document.getElementById('observations').value;
-        console.log((laborCost * hourAmount))
         document.getElementById('priceCost').value = parseFloat((laborCost * hourAmount) + materialPrice);
+        
+    }
+
+    function signUpImages() {
+        const file1 = document.getElementById('file1').files[0];
+        const file2 = document.getElementById('file2').files[0];
+        const storage = firebase.storage();
+        const storageRef = storage.ref();
+        let originalName = file1.name.split('.');
+        let child = storageRef.child('productsImage/' + originalName[0] + Date.now() + '.' + originalName[1]);
+        let imageRef = [];
+        child.put(file1).then((resp) => {
+            const referenceUrl = storageRef.child(resp.metadata.fullPath);
+            referenceUrl.getDownloadURL().then((url) => {
+                imageRef.push(url);
+                originalName = file2.name.split('.');
+                child = storageRef.child('productsImage/' + originalName[0] + Date.now() + '.' + originalName[1]);
+                child.put(file2).then((resp) => {
+                    const referenceUrl2 = storageRef.child(resp.metadata.fullPath);
+                    referenceUrl2.getDownloadURL().then((url) => {
+                        imageRef.push(url);
+                        submit();
+                    })
+                })
+            })
+        }).catch((err) => {
+            console.log(err);
+        })
+
     }
 
 }

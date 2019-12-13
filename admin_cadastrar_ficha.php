@@ -118,11 +118,11 @@
           <div class="row">
             <div class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
-              <input id="standartDivisor" type="text" name="" value="" class="inputadmin2" placeholder="Divisor Padrão">
+              <input disabled id="standartDivisor" type="text" name="" value="" class="inputadmin2" placeholder="Divisor Padrão">
             </div>
             <div class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
-              <input id="salePrice" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Venda">
+              <input disabled id="salePrice" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Venda">
             </div>
           </div>
           
