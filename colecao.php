@@ -15,7 +15,7 @@
     <?php include 'partes/cabecalho.php' ?>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active w-100 pt-5" style="background-image: url('img/modelo2.jpg'); background-size: cover">
+        <div class="carousel-item active w-100 pt-5" style="background-image: url('img/colecao1.jpg'); background-size: cover">
           <!-- <video src="img/video9.mp4" autoplay loop class="position-absolute" style="background-size:; right: 0; left: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto"></video> -->
           <div class="row align-items-center">
             <div class="col text-center align-self-center anime" style="color: #000; font-family: 'GT Walsheim', sans-serif;">

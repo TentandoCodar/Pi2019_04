@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Home | Wave</title>
   </head>
-  <body style="background: #f2f2f2">
+  <body style="background: #f2f2f2" id="body">
     <?php include 'partes/cabecalho.php' ?>
     <?php include 'partes/help.php' ?>
     <div class="container-fluid vh-100" style="background: #f2f2f2">
@@ -89,7 +89,7 @@
           <div class="pr-5 coluna_index">
             <br>
             <p style="font-size: 12px" class="pt-3 anime">ROUPAS SELECIONADAS</p>
-            <p class="pt-4 pb-4 anime" style="font-size: 30px">Areia e Sal</p>
+            <p class="pt-4 pb-4 anime" style="font-size: 30px; font-weight: bold">Areia e Sal</p>
             <p style="font-size: 12px" class="pt-2 anime">DESIGN / SUMMER / STYLE / CHIQUESA / FASHION</p>
             <p class="mt-5 mb-5 anime" style="font-size: 14px">A nova coleção areia e sal expressa conforto, moda e beleza.</p>
             <h2 style="font-family: 'Super Display'; cursor: pointer" class="anime" onclick="abrirLoja()">Conferir</h2>
@@ -116,7 +116,7 @@
         <div class="col-sm text_index text-left parte_oculta" style="font-family: 'GT Walsheim Light'; padding: 0; margin: 0">
           <div class="pr-5" style="height: 70%; padding-left: 30%; padding-right: 40%; background: #324664; color: #fff">
             <br><br>
-            <p class="pt-4 pb-4 anime" style="font-size: 30px">Roupa</p>
+            <p class="pt-4 pb-4 anime" style="font-size: 30px; font-weight: bold">Roupa</p>
             <p style="font-size: 12px" class="pt-5 anime">ROUPAS SELECIONADAS / SELECIONADO / ROUPA / DEUSES / FASHION / AGUENTO NÃO</p>
             <p class="mt-5 mb-5 anime" style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             <h2 style="font-family: 'Super Display'; cursor: pointer" class="anime" onclick="abrirLoja()">Conferir</h2>
