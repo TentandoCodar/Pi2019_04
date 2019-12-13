@@ -50,8 +50,8 @@ function abrirCadastroCusto(){
   window.location.href = "./admin_cadastrar_custo.php";
 }
 
-function abrirProdutos(){
-  window.location.href = "./produto.php";
+function openProduct( code="" ){
+  window.location.href = "./produto.php?id=" + code;
 }
 
 function fecharProduto(){
@@ -270,6 +270,28 @@ function abrirModal(email, name, code, phone = ""){
   document.getElementById('escurecer').classList.remove('escurecer');
   document.getElementById('escurecer').classList.add('escurecer_animate');
   document.getElementById('body').classList.add('overflow');
+}
+
+function openDatasheetModal(name,code, id){
+
+  document.getElementById('index').value = id;
+  document.getElementById('DatasheetName').innerHTML = name;
+  
+  document.getElementById('DatasheetCode').innerHTML = code;
+  
+  document.getElementById('modal_products').classList.add('modal_admin_animate');
+  document.getElementById('modal_products').classList.remove('modal_admin');
+  document.getElementById('escurecer').classList.remove('escurecer');
+  document.getElementById('escurecer').classList.add('escurecer_animate');
+  document.getElementById('body').classList.add('overflow');
+}
+
+function closeModalDatasheet(){
+  document.getElementById('modal_products').classList.remove('modal_admin_animate');
+  document.getElementById('modal_products').classList.add('modal_admin');
+  document.getElementById('escurecer').classList.add('escurecer');
+  document.getElementById('escurecer').classList.remove('escurecer_animate');
+  document.getElementById('body').classList.remove('overflow');
 }
 
 function productModalOpen(description, price, unity, code, provider) {

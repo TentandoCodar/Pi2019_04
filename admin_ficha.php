@@ -33,12 +33,14 @@
       </div>
       <div class="pt-1 pb-5">
         <p>Filtre sua busca</p>
-        <select name="" id="bucket">
-          <option value="">Selecione uma opo</option>
+        <select  id="collection">
+          <option value="code">Codigo</option>
+          <option value="salePrice">Preço</option>
+          <option value="modelist">Modelista</option>
         </select>
       </div>
       <div id="Content" style="overflow:hidden" class="pb-5">
-
+        
       </div>
 
     </div>
@@ -49,10 +51,12 @@
       <div class="row h-100 pt-4 pr-4 pt-3 pb-3 align-items-center style_admin">
         <i class="fas fa-times position-absolute pt-5 pr-5 icone_modal" onclick="fecharModalProducts()"></i>
         <div id="ModalDataContent" class="col pl-5 pr-5 pt-5 pb-5">
-          <h1 id="UserName" style="" class="pl-3 pr-3 text_modal_titulo"></h1>
-          <p id="UserEmail" class="pl-4 pr-3 text_modal_texto"> </p>
-          <p id="UserCode" class="pl-4 pr-3 text_modal_texto"></p>
-
+          <h1 id="DatasheetName" style="" class="pl-3 pr-3 text_modal_titulo"></h1>
+          <p id="DatasheetCode" class="pl-4 pr-3 text_modal_texto"> </p>
+          <input type="file" id="file1"></input>
+          <input type="file" id="file2"></input>
+          <input id="index" hidden value=""/>
+          <button id="submitModalButton">Editar</button>
         </div>
       </div>
     </div>
@@ -66,5 +70,6 @@
       require 'partes/provider.php';
       require 'partes/adminProvider.php';
     ?>
+    <script src="js/ficha.js"></script>
   </body>
 </html>

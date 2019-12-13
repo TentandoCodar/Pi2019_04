@@ -22,50 +22,50 @@
         <div class="col">
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="name" type="text" name="" value="" class="inputadmin2" placeholder="Retirada (%)">
+              <input id="WithDraw" type="text" name="" value="" class="inputadmin2" placeholder="Retirada (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="email" type="text" name="" value="" class="inputadmin2" placeholder="Impostos (%)">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Operacionais (%)">
-            </div>
-            <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Administrativas (%)">
+              <input id="Theft" type="text" name="" value="" class="inputadmin2" placeholder="Impostos (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Financeiras (%)">
+              <input id="OperationalExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Operacionais (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Diversas (%)">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Comissões (%)">
-            </div>
-            <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Investimentos (%)">
+              <input id="AdministrativeExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Administrativas (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Transportes/Fretes (%)">
+              <input id="FinancialExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Financeiras (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Custos Fixos (%)">
+              <input id="DiverseExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Diversas (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Margem de Lucro (%)">
+              <input id="Comissions" type="text" name="" value="" class="inputadmin2" placeholder="Comissões (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Total">
+              <input id="Investments" type="text" name="" value="" class="inputadmin2" placeholder="Investimentos (%)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm pt-5 pb-5">
+              <input id="Transportation" type="text" name="" value="" class="inputadmin2" placeholder="Transportes/Fretes (%)">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <input id="FixedCosts" type="text" name="" value="" class="inputadmin2" placeholder="Custos Fixos (%)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm pt-5 pb-5">
+              <input id="ProfitMargin" type="text" name="" value="" class="inputadmin2" placeholder="Margem de Lucro (%)">
+            </div>
+            <div class="col-sm pt-5 pb-5">
+              <input id="Total" type="text" name="" value="" class="inputadmin2" placeholder="Total">
             </div>
           </div>
           <div class="row">
@@ -75,23 +75,23 @@
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Valor Bruto da Folha de Pagamento">
+              <input id="PaymentSheetBrute" type="text" name="" value="" class="inputadmin2" placeholder="Valor Bruto da Folha de Pagamento">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Porcentagem dos Encargos (%)">
+              <input id="ChargePercentage" type="text" name="" value="" class="inputadmin2" placeholder="Porcentagem dos Encargos (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Encargos (R$)">
+              <input disabled id="Charge" type="text" name="" value="" class="inputadmin2" placeholder="Encargos (R$)">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="Custo Bruto da Mão-De-Obra (%)">
+              <input disabled id="LaborCostBrute" type="text" name="" value="" class="inputadmin2" placeholder="Custo Bruto da Mão-De-Obra (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-12 pt-5 pb-5 text-center">
-              <button id="signUpClientButton" type="button" name="button" class="botao_menu2">ATUALIZAR</button>
+              <button id="updateButton" type="button" name="button" class="botao_menu2">ATUALIZAR</button>
               <button id="signUpClientButton" type="button" name="button" class="botao_menu2 mt-4" onclick="entrarAdmin()">CANCELAR</button>
             </div>
           </div>
@@ -109,5 +109,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/costs.js"></script>
   </body>
 </html>

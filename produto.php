@@ -22,23 +22,23 @@
     <div class="container-fluid vh-100">
       <div class="row h-100 align-items-center">
         <div class="col-sm text-center">
-          <div class="display_info">
+          <div  class="display_info">
             <!-- NOME -->
-            <p style="font-size: 50px; font-family: 'super display'" class="pt-4">Nome</p>
+            <p id="Name" style="font-size: 50px; font-family: 'super display'" class="pt-4">Nome</p>
             <!-- PREÇO -->
-            <p class="pb-3">R$ 100000,00</p>
+            <p id="Price" class="pb-3">R$ 100000,00</p>
           </div>
-          <img src="img/moca2.jpg" alt="" class="img-fluid img_produto">
+          <img id="ProductImage" src="img/moca2.jpg" alt="" class="img-fluid img_produto">
         </div>
         <div class="col-sm coluna_produtos">
-          <div class="display_info2">
+          <div id="Display_cel" class="display_info2">
             <!-- NOME -->
-            <p style="font-size: 50px; font-family: 'super display'">Nome</p>
+            <p id="Name_cel" style="font-size: 50px; font-family: 'super display'">Nome</p>
             <!-- PREÇO -->
-            <p class="pb-3">R$ 100000,00</p>
+            <p id="Price_cel" class="pb-3">R$ 100000,00</p>
           </div>
           <!-- DESCRIÇÃO -->
-          <p class="pb-5 descricao_produto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          <p id="Description" class="pb-5 descricao_produto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
           <p>Tamanhos disponíveis</p>
           <div class="tamanho_produtos" style="overflow: hidden">
             <p class="ml-1 mr-1 pt-1 pb-1 tamanho" style="font-size: 13px">PP</p>
@@ -51,7 +51,7 @@
           <p class="pt-4" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" style="cursor: pointer">
             Composição de medidas <i class="fas fa-caret-down position-absolute icon_produto"></i>
           </p>
-          <div class="collapse collapse_produto pb-5" id="collapseExample2">
+          <div id="rawMaterial" class="collapse collapse_produto pb-5" id="collapseExample2">
             <div class="card card-body">
               <!-- MATERIAL UTILIZADO -->
               Material Utilizado
@@ -65,6 +65,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <?php 
+      require 'partes/provider.php';
+    ?>
+    <script src="js/product.js"></script>
   </body>
 </html>
