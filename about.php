@@ -34,7 +34,7 @@
     <div class="container-fluid second_container_about pb-5">
       <div class="row h-100 text-center">
         <div class="col-sm">
-          <img src="img/moca.jpg" alt="" class="img-fluid anime_img2" width="600px">
+          <img src="img/sobre2.jpg" alt="" class="img-fluid anime_img2" width="500px">
         </div>
         <div class="col-sm text-left">
           <p style="font-size: 200px; font-family: 'GT Walsheim'" class="anime">W.S.</p>
@@ -66,7 +66,7 @@
           </p>
         </div>
         <div class="col-sm">
-          <img src="img/moca.jpg" alt="" class="img-fluid anime_img2" width="600px">
+          <img src="img/sobre4.jpg" alt="" class="img-fluid anime_img2" width="500px">
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
               <p>A Wave Store foi criada para representar a autenticidade dos produtos desenvolvidos pela confecção High Fashion.</p>
             </div>
           </div>
-          <img src="img/moca.jpg" alt="" class="img-fluid anime" width="300px">
+          <img src="img/sobre2.jpg" alt="" class="img-fluid anime" width="300px">
           <div class="pt-4 pl-4 text-left">
             <p style="font-size: 20px; font-family: 'GT Walsheim'" class="anime">Por meio da marca,</p><p style="font-size: 16px; font-family: 'GT Walsheim Light'" class="anime"> a confecção pode vender seus próprios itens e produzir de acordo com a demanda solicitada.</p>
           </div>
@@ -131,7 +131,7 @@
               </p>
             </div>
           </div>
-          <img src="img/moca.jpg" alt="" class="img-fluid amime" width="300px">
+          <img src="img/sobre4.jpg" alt="" class="img-fluid amime" width="300px">
           <div class="pt-4 pl-4 text-left">
             <p style="font-size: 20px; font-family: 'GT Walsheim'" class="anime">O site</p><p style="font-size: 16px; font-family: 'GT Walsheim Light'" class="anime">e o
               aplicativo desenvolvidos visam

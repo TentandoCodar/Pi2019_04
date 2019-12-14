@@ -83,7 +83,7 @@
             <span style="font-size: 14px">01</span><span>Body.</span><br>
           </div>
           <div class="text_tendencia" onmouseover="braletteimageOpen()" onclick="textBralette()" onmouseout="braletteimageClose()" id="bralette">
-            <span style="font-size: 14px">02</span><span>Bralette.</span><br>
+            <span style="font-size: 14px">02</span><span>Floral.</span><br>
           </div>
           <div class="text_tendencia" onmouseover="coresimageOpen()" onclick="textCores()" onmouseout="coresimageClose()" id="cores">
             <span style="font-size: 14px">03</span><span>Cores.</span><br>

@@ -9,17 +9,14 @@
     <div class="col pt-5 pb-5 pl-3 pr-3">
       <h2>Contato</h2>
       <div class="" style="font-family: 'GT Walsheim Light'">
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
+        <p>wavestoretcc@gmail.com</p>
+        <p>(32) 3261-7011</p>
+        <p style="cursor: pointer"><a href="https://www.google.com/maps/d/viewer?mid=17fwxQzP9Z9gJWMYdJY-onepCIFvyP1RH&ll=-21.638530694736463%2C-43.17941059999998&z=11" style="color: #fff;">Localização</a></p>
       </div>
     </div>
     <div class="col pt-5 pb-5 pl-3 pr-3">
       <h2>Contato</h2>
       <div class="" style="font-family: 'GT Walsheim Light'">
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
       </div>
     </div>
   </div>
@@ -36,9 +33,9 @@
     <div class="col-12 pt-2 pb-2 pl-3 pr-3">
       <h4>Contato</h4>
       <div class="" style="font-family: 'GT Walsheim Light'">
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
+        <p>wavestoretcc@gmail.com</p>
+        <p>(32) 3261-7011</p>
+        <p style="cursor: pointer"><a href="https://www.google.com/maps/d/viewer?mid=17fwxQzP9Z9gJWMYdJY-onepCIFvyP1RH&ll=-21.638530694736463%2C-43.17941059999998&z=11" style="color: #fff;">Localização</a></p>
       </div>
     </div>
     <div class="col-12 pt-2 pb-2 pl-3 pr-3">

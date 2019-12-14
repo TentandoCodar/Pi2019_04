@@ -173,8 +173,8 @@ function textBralette(){
   document.getElementById('modal_tendencia').classList.remove('modal_tendencia');
   document.getElementById('escurecer').classList.remove('escurecer');
   document.getElementById('escurecer').classList.add('escurecer_animate');
-  document.getElementById("text_ID").innerHTML = 'Um bralette a seu dispor.';
-  document.getElementById("text_description_ID").innerHTML = 'Se usado com transparências, melhor ainda! Lance mão de um bralette rendado ou de veludo e combine com camisas, bodies e blusas translúcidas – o efeito é sexy, mostra um pouco de pele sem deixá-la totalmente exposta e combina com aquela sua calça jeans de todo dia.';
+  document.getElementById("text_ID").innerHTML = 'Floral.';
+  document.getElementById("text_description_ID").innerHTML = 'Sempre presente nos nossos looks, o floral nunca sai de moda. Estão entre o ‘must have’ do momento.  As flores deixam tudo mais belo e colorido. Combinam com todas as peças de roupas e as mais variadas cores. Quer saber uma curiosidade? Foram os indianos quem primeiro se atentou para usar essa estampa.Agora, a estampa de flores sempre volta com força. De tempos em tempos com novidades, deixando qualquer look básico com muito mais personalidade.';
 }
 
 function textCores(){
