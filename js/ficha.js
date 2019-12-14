@@ -40,19 +40,26 @@ window.onload = () => {
 
     function deleteImages() {
         const index = document.getElementById('index').value;
-        
-        const ref1 = storage.refFromURL(image1[index]);
-        const ref2 = storage.refFromURL(image2[index]);
-
-        ref1.delete().then((resp) => {
-            ref2.delete().then((resp) => {
-                editImages(index)
+        console.log(image1[index]);
+        console.log(image2[index]);
+        if(image1[index] != "" || image2[index] != "") {
+            const ref1 = storage.refFromURL(image1[index]);
+            const ref2 = storage.refFromURL(image2[index]);
+    
+            ref1.delete().then((resp) => {
+                ref2.delete().then((resp) => {
+                    editImages(index)
+                }).catch((err) => {
+    
+                })
             }).catch((err) => {
-
+                console.log(err);
             })
-        }).catch((err) => {
-            console.log(err);
-        })
+        }
+        else {
+            editImages(index);
+        }
+        
     }
 
     function editImages(index) {
