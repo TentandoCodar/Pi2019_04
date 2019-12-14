@@ -22,17 +22,21 @@
         <div class="col">
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Nome</span><br>
               <input id="name" type="text" name="" value="" class="inputadmin2" placeholder="Nome">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Email</span><br>
               <input id="email" type="text" name="" value="" class="inputadmin2" placeholder="Email">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Senha</span><br>
               <input id="password" type="password" name="" value="" class="inputadmin2" placeholder="Senha">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Imagem</span><br>
               <input type="file" id="file" name=""  class="input_file" placeholder="Imagem">
             </div>
           </div>

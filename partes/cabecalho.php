@@ -1,9 +1,9 @@
 <div class="w-100 style_menu_pc" id="menu_site" style="z-index: 300">
   <div class="row align-items-center pl-5 pr-5 pt-2 pb-2">
-    <div class="col-3 text-left pl-3">
+    <div class="col-2 text-left pl-3">
       <a href="index.php" id="link_logo" class="link_logo">Wave</a>
     </div>
-    <div id="HeaderContainer" class="col-9 text-right pr-3 links">
+    <div id="HeaderContainer" class="col-10 text-right pr-3 links">
       <a href="colecao.php" class="pl-3 pr-3">Coleção</a>
       <a href="tendencias.php" class=" pl-3 pr-3">Tendências</a>
       <a href="about.php" class=" pl-3 pr-3">Sobre</a>

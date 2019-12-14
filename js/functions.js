@@ -65,6 +65,10 @@ function entrarAdmin(){
 function abrirAbout(){
   window.location.href = "./about.php";
 }
+
+function entrarAlmoxarifado(){
+  window.location.href = "./almoxarifado.php";
+}
 //-------------------------MENUDOIDAO-----------------------------------
 
 const target2 = document.querySelectorAll('.style_menu_pc');
@@ -276,9 +280,9 @@ function openDatasheetModal(name,code, id){
 
   document.getElementById('index').value = id;
   document.getElementById('DatasheetName').innerHTML = name;
-  
+
   document.getElementById('DatasheetCode').innerHTML = code;
-  
+
   document.getElementById('modal_products').classList.add('modal_admin_animate');
   document.getElementById('modal_products').classList.remove('modal_admin');
   document.getElementById('escurecer').classList.remove('escurecer');

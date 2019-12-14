@@ -24,14 +24,15 @@
         <div class="col">
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Nome da Peça</span><br>
               <input id="name" type="text" name="" value="" class="inputadmin2" placeholder="Nome da Peça">
             </div>
             <div class="col-sm pt-5 pb-5">
-              <input id="description" type="text" name="" value="" class="inputadmin2" placeholder="Descrição da peça">
+              <span>Descrição da Peça</span><br>
+              <input id="description" type="text" name="" value="" class="inputadmin2" placeholder="Descrição da Peça">
             </div>
-          </div>
-          <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Categoria</span><br>
               <select id="type">
                 <option value="blouse">blusa</option>
                 <option value="body">body</option>
@@ -44,13 +45,14 @@
                 <option value="pants">calça</option>
               </select>
             </div>
-            
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Referencia</span><br>
               <input disabled id="code" type="text" name="" value="" class="inputadmin2" placeholder="Referencia">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Data</span><br>
               <input disabled id="date" type="text" name="" value="" class="inputadmin2" placeholder="Data">
             </div>
           </div>
@@ -61,33 +63,33 @@
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Imagem Frontal</span><br>
               <input id="file1" type="file" name="" value="" class="input_file" placeholder="Descrição da Peça">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Imagem Posterior</span><br>
               <input id="file2" type="file" name="" value="" class="input_file" placeholder="Descrição da Peça">
             </div>
           </div>
           <div class="row">
-            <div class="col-sm pt-5 pb-3">
+            <div class="col-sm pt-5 pb-5">
               <h3 style="color: #000; font-weight: 700; font-family: 'GT Walsheim'">PRODUTO</h3>
             </div>
           </div>
-          
+
           <div class="row">
             <div class="col-sm pt-5 pb-5">
-              <input id="productAmount" type="text" name="" value="" class="inputadmin2" placeholder="Numero de produtos">
+              <span>Numero de Produtos</span><br>
+              <input id="productAmount" type="text" name="" value="" class="inputadmin2" placeholder="Numero de Produtos">
             </div>
-            
+
             <div  class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
-              <button id="AmountSelectButton">Setar</button>
+              <button id="AmountSelectButton" class="botao_menu2">SETAR</button>
             </div>
           </div>
-          <div class="row">
-            <div id="ProductsSelect" class="col-sm pt-5 pb-5">
-              <!-- VALOR FIXO -->
-            </div>
-            
+          <div class="row" id="ProductsSelect">
+
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-3">
@@ -96,54 +98,61 @@
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Lacre 1</span><br>
               <input id="seal1" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 1">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Lacre 2</span><br>
               <input id="seal2" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 2">
             </div>
           </div>
           <div class="row">
-            
+
             <div class="col-sm pt-5 pb-5">
+              <span>Lacre 3</span><br>
               <input id="seal3" type="text" name="" value="" class="inputadmin2" placeholder="Lacre 3">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Modelista</span><br>
               <input id="modelist" type="text" name="" value="" class="inputadmin2" placeholder="Modelista">
             </div>
           </div>
-          
-          
+
+
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Observações</span><br>
               <input id="observations" type="text" name="" value="" class="inputadmin2" placeholder="Observações">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Horas trabalhadas</span><br>
               <input id="hourAmount" type="text" name="" value="" class="inputadmin2" placeholder="Horas trabalhadas">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
+              <span>Custo de Mão-De-Obra (por peça)</span><br>
               <input disabled id="laborCost" type="text" name="" value="" class="inputadmin2" placeholder="Custo de Mão-De-Obra (por peça)">
             </div>
             <div class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
+              <span>Preço de Custo</span><br>
               <input disabled id="priceCost" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Custo">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
+              <span>Divisor Padrão</span><br>
               <input disabled id="standartDivisor" type="text" name="" value="" class="inputadmin2" placeholder="Divisor Padrão">
             </div>
             <div class="col-sm pt-5 pb-5">
               <!-- VALOR FIXO -->
+              <span>Preço de Venda</span><br>
               <input disabled id="salePrice" type="text" name="" value="" class="inputadmin2" placeholder="Preço de Venda">
             </div>
           </div>
-          
-          
-          
           <div class="row">
             <div class="col-sm pt-5 pb-5">
               <button id="submitButton" type="button" name="button" class="botao_menu2">CADASTRAR</button>

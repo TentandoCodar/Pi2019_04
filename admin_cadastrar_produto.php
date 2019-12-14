@@ -22,24 +22,29 @@
         <div class="col">
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Nome</span><br>
               <input id="name" type="text" name="" value="" class="inputadmin2" placeholder="Nome">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Unidade</span><br>
               <input id="unity" type="text" name="" value="" class="inputadmin2" placeholder="Unidade">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Preço unitário</span><br>
               <input id="price" type="text" name="" value="" class="inputadmin2" placeholder="Preço unitário">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Codigo</span><br>
               <input disabled id="code" type="text" name="" value="" class="inputadmin2" placeholder="Codigo">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Fornecedor</span><br>
               <select name="" id="provider">
-                <option value="">GUSTAVO GOSTOSO</option>
+                <option value=""></option>
               </select>
             </div>
           </div>

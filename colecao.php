@@ -16,7 +16,7 @@
     <?php include 'partes/cabecalho.php' ?>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active w-100 pt-5" style="background-image: url('img/colecao1.jpg'); background-size: cover">
+        <div class="carousel-item active w-100 pt-5" style="background-color: #f2f2f2; background-size: cover">
           <!-- <video src="img/video9.mp4" autoplay loop class="position-absolute" style="background-size:; right: 0; left: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto"></video> -->
           <div class="row align-items-center">
             <div class="col text-center align-self-center anime" style="color: #000; font-family: 'GT Walsheim', sans-serif;">
@@ -24,8 +24,8 @@
               <span style="font-size: 25px;">lançamento</span><br>
               <span style="font-size: 25px; font-family: 'GT Walsheim Light'" >coleção de verão</span><br>
               <span>- - - - - - - - - - - - - - - - - - - -</span><br>
-              <span style="font-family: 'Super Display', sans-serif; font-size: 55px;">AREIA</span><br>
-              <span style="font-family: 'Super Display', sans-serif; font-size: 55px;" class="pb-5">E SAL</span><br><br>
+              <span style="font-family: 'Super Display', sans-serif; font-size: 55px;">Areia</span><br>
+              <span style="font-family: 'Super Display', sans-serif; font-size: 55px;" class="pb-5">e Sal</span><br><br>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@
             <a href="colecao.php?type=pants" style="font-size: 13px" class="dropdown-item">calça</a>
           </div>
         </div>
-        
+
       </div>
       <div class="text-center pt-5 filtros_cel">
         <div class="row mr-5 ml-5">
@@ -64,10 +64,10 @@
 
     <!-- _____________________LISTAGEM DE PRODUTOS______________________-->
 
-    <div class="container-fluid">
+    <div class="container-fluid pt-5">
       <div id="Content" class="row w-100 pt-5 text-center pl-5 pr-4 ">
-        
-        
+
+
       </div>
     </div>
 
@@ -114,7 +114,7 @@
         <hr>
         <div class="row" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
           <div class="col pl-5 pt-2 pr-5">
-            
+
           </div>
           <div class="col pl-5 pt-2 pr-5 text-right">
             <i class="fas fa-caret-down"></i>
@@ -123,7 +123,8 @@
         <hr>
       </div>
     </div>
-    <?php 
+    <br><br><br>
+    <?php
       include 'partes/footer.php';
       include 'partes/provider.php';
     ?>

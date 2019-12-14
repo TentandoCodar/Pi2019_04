@@ -48,11 +48,15 @@
 
     <div class="container-fluid position-fixed vh-100 vw-100 modal_admin" id="modal_products">
       <div class="row h-100 pt-4 pb-3 align-items-center style_modal text-center">
-        <i class="fas fa-times position-absolute pt-5 pr-5 icone_modal" onclick="fecharModalProducts()"></i>
+        <i class="fas fa-times position-absolute icone_modal" onclick="fecharModalProducts()"></i>
         <div id="ModalDataContent" class="col pl-5 pr-5 pt-5 pb-5">
-          <h1 id="UserName" style="" class="pl-3 pr-3 text_modal_titulo">Teste do teste</h1>
-          <p id="UserEmail" class="pl-4 pr-4 text_modal_texto"></p>
-          <p id="UserCode" class="pl-4 pr-4 text_modal_texto"></p>
+          <h1 id="UserEmail" class="pl-3 pr-3 text_modal_titulo"></h1>
+          <div class="pt-5">
+            <span class="pt-2">email:</span>
+            <p id="UserName" class="text_modal_texto"></p>
+            <span class="pt-2">codigo:</span>
+            <p id="UserCode" class="text_modal_texto"></p>
+          </div>
         </div>
       </div>
     </div>

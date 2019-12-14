@@ -16,7 +16,7 @@
     <div class="espacodecima">
       <br><br><br>
     </div>
-    <div class="container-fluid vh-100 text-center">
+    <div class="container-fluid vh-100 text-center pt-3">
       <div class="row h-100 align-items-center">
         <div class="col">
           <div class="row align-items-end">
@@ -47,10 +47,40 @@
               <h5 class="">Custos.</h5>
             </div>
           </div>
+          <div class="row align-items-start almo_display">
+            <div class="col-sm rounded pt-5 pb-5 pl-2 pr-2 mr-3 ml-3 mb-3 mt-3 card_admin" onclick="entrarAlmoxarifado()">
+              <div class="" style="width: 33.33%; float: left; padding-left: 20%;">
+                <i class="fas fa-thermometer-three-quarters"></i>
+                <p>Temp</p>
+              </div>
+              <div class="" style="width: 33.33%; float: left">
+                <i class="fas fa-wifi"></i>
+                <p>Wifi</p>
+              </div>
+              <div class="" style="width: 33.33%; float: left; padding-right: 20%">
+                <i class="fas fa-lightbulb"></i>
+                <p>Light</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <div class="almoxarifado" onclick="entrarAlmoxarifado()">
+      <div class="pl-3 pr-3" style="float: left; ">
+        <i class="fas fa-thermometer-three-quarters"></i>
+        <p>Temp</p>
+      </div>
+      <div class="pl-3 pr-3" style="float: left">
+        <i class="fas fa-wifi"></i>
+        <p>Wifi</p>
+      </div>
+      <div class="pl-3 pr-3" style="float: left;">
+        <i class="fas fa-lightbulb"></i>
+        <p>Light</p>
+      </div>
+    </div>
 
     <script src="js/functions.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

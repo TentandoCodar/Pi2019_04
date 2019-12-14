@@ -75,7 +75,7 @@
       <div class="row h-100 align-items-center text-center">
         <div class="col-sm h-100 pt-5">
           <p style="font-size: 40px; font-family: 'Super Display'" class="pt-5">Preencha o formulário</p>
-          <div class="form_about pt-5">
+          <div class="form_about">
             <input type="text" name="" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
             <input type="text" name="" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
             <input type="text" name="" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>

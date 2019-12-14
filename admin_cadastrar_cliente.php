@@ -22,17 +22,21 @@
         <div class="col">
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Nome</span><br>
               <input id="name" type="text" name="" value="" class="inputadmin2" placeholder="Nome">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Email</span><br>
               <input id="email" type="text" name="" value="" class="inputadmin2" placeholder="Email">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Telefone</span><br>
               <input id="phone" type="text" name="" value="" class="inputadmin2" placeholder="Telefone">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>CNPJ</span><br>
               <input id="cnpj" type="text" name="" value="" class="inputadmin2" placeholder="CNPJ">
             </div>
           </div>

@@ -15,7 +15,7 @@ window.onload = () => {
     document.getElementById('date').value = date;
     submitButton.addEventListener('click', () => {
         signUpImages()
-        
+
     })
 
     amountSelectButton.addEventListener('click', () => {
@@ -23,13 +23,13 @@ window.onload = () => {
     })
     getProducts();
     getCosts();
-    
+
 
     function getProducts() {
         firestore.collection('Products').onSnapshot((snapshot) => {
             snapshot.forEach(doc => {
                 productsArray.push(doc.data());
-                
+
             });
         })
     }
@@ -38,16 +38,26 @@ window.onload = () => {
         document.getElementById('ProductsSelect').innerHTML = "";
         const productAmount = document.getElementById('productAmount').value
         for(let i = 0; i < productAmount; i++) {
-            
+
             document.getElementById("ProductsSelect").innerHTML += `
-                <select id='select${i}' style="widht: 50%; height: 19px; float: left">
+            <div class="col-6 pt-3 pb-3">
+              <span>Fornecedor</span><br>
+                <select id='select${i}'>
 
                 </select>
-                <input id='input${i}' style="float: right; width: 20%; height: 19px;">
+            </div>
+            <div class="col-6 pt-3 pb-3">
+            <span>Quantidade<span><br>
+                <input id='input${i}' class="inputadmin2" {
+                  constructor() {
+
+                  }
+                }">
+            </div>
             `;
             let counter = 0;
             for(let o of productsArray) {
-                
+
                 document.getElementById('select'+i).innerHTML += `
                     <option value=${counter}>${o.name}</option>
                 `
@@ -65,22 +75,22 @@ window.onload = () => {
                 laborCost = data.LaborCostBrute;
                 document.getElementById('laborCost').value = laborCost;
                 const totalComercializationCostPlaceholder = (
-                    parseFloat(data.AdministrativeExpenses) + 
-                    parseFloat(data.Comissions) + 
-                    parseFloat(data.DiverseExpenses) + 
-                    parseFloat(data.FinancialExpenses) + 
-                    parseFloat(data.FixedCosts) + 
-                    parseFloat(data.Investments) + 
-                    parseFloat(data.LaborCostBrute) + 
-                    parseFloat(data.OperationalExpenses) + 
-                    parseFloat(data.PaymentSheetBrute) + 
+                    parseFloat(data.AdministrativeExpenses) +
+                    parseFloat(data.Comissions) +
+                    parseFloat(data.DiverseExpenses) +
+                    parseFloat(data.FinancialExpenses) +
+                    parseFloat(data.FixedCosts) +
+                    parseFloat(data.Investments) +
+                    parseFloat(data.LaborCostBrute) +
+                    parseFloat(data.OperationalExpenses) +
+                    parseFloat(data.PaymentSheetBrute) +
                     parseFloat(data.Theft) +
                     parseFloat(data.Transportation) +
                     parseFloat(data.WithDraw)
                 )
                 totalComercializationCost = totalComercializationCostPlaceholder;
                 profitMargin = data.ProfitMargin;
-            }) 
+            })
         })
     }
 
@@ -90,28 +100,28 @@ window.onload = () => {
         let productsAmountArray = [];
         materialPrice = 0;
         for(let b = 0; b < productAmount; b++) {
-            
+
             const value = document.getElementById('input' + b).value;
             productsAmountArray.push(value);
         }
-        
+
         for(let i = 0; i < productAmount; i++) {
-            
+
             const value = document.getElementById('select' + i).value;
             const pricePlaceholder = productsArray[value].price;
             const codePlaceholder = productsArray[value].code;
-            
+
             const s = parseFloat(pricePlaceholder * productsAmountArray[i]);
             productsPriceArray.push(s);
             materialPrice = materialPrice + s;
-            
+
             productsCodeArray.push(codePlaceholder);
         }
         return productsCodeArray;
     }
 
     function submit(image1, image2) {
-        
+
         const productsCodeArray = getDataOfProductSelect();
         const price = materialPrice;
         const name = document.getElementById('name').value;
@@ -130,7 +140,7 @@ window.onload = () => {
             return null;
         }
         document.getElementById('priceCost').value = parseFloat((laborCost * hourAmount) + materialPrice);
-        
+
         document.getElementById('standartDivisor').value = parseFloat( 1 - (parseFloat(totalComercializationCost / 100) + parseFloat(profitMargin / 100)));
         const priceCost = document.getElementById('priceCost').value;
         const standartDivisor = parseFloat(document.getElementById('standartDivisor').value);
@@ -161,10 +171,10 @@ window.onload = () => {
             }).then((resp) => {
                 window.location.href = "admin_ficha.php";
             }).catch((err) => {
-                
+
             })
         }).catch((err) => {
-            
+
         })
     }
 

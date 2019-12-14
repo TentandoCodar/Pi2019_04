@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alatsi|Cutive+Mono|Raleway:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Cadastrar Custo | Wave</title>
+    <title>Custos | Wave</title>
   </head>
   <body style="font-family: 'GT Walsheim'; color: #000; background-image: linear-gradient(60deg, #f2f2f2, #f2f2f2);">
     <?php include 'partes/cabecalho.php' ?>
@@ -22,49 +22,61 @@
         <div class="col">
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Retirada (%)</span><br>
               <input id="WithDraw" type="text" name="" value="" class="inputadmin2" placeholder="Retirada (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Impostos (%)</span><br>
               <input id="Theft" type="text" name="" value="" class="inputadmin2" placeholder="Impostos (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Despesas Operacionais (%)</span><br>
               <input id="OperationalExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Operacionais (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Despesas Administrativas (%)</span><br>
               <input id="AdministrativeExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Administrativas (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Despesas Financeiras (%)</span><br>
               <input id="FinancialExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Financeiras (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Despesas Diversas (%)</span><br>
               <input id="DiverseExpenses" type="text" name="" value="" class="inputadmin2" placeholder="Despesas Diversas (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Comissões (%)</span><br>
               <input id="Comissions" type="text" name="" value="" class="inputadmin2" placeholder="Comissões (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Investimentos (%)</span><br>
               <input id="Investments" type="text" name="" value="" class="inputadmin2" placeholder="Investimentos (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Transportes/Fretes (%)</span><br>
               <input id="Transportation" type="text" name="" value="" class="inputadmin2" placeholder="Transportes/Fretes (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Custos Fixos (%)</span><br>
               <input id="FixedCosts" type="text" name="" value="" class="inputadmin2" placeholder="Custos Fixos (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Margem de Lucro (%)</span><br>
               <input id="ProfitMargin" type="text" name="" value="" class="inputadmin2" placeholder="Margem de Lucro (%)">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Total</span><br>
               <input id="Total" type="text" name="" value="" class="inputadmin2" placeholder="Total">
             </div>
           </div>
@@ -75,17 +87,21 @@
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Valor Bruto da Folha de Pagamento</span><br>
               <input id="PaymentSheetBrute" type="text" name="" value="" class="inputadmin2" placeholder="Valor Bruto da Folha de Pagamento">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Porcentagem dos Encargos (%)</span><br>
               <input id="ChargePercentage" type="text" name="" value="" class="inputadmin2" placeholder="Porcentagem dos Encargos (%)">
             </div>
           </div>
           <div class="row">
             <div class="col-sm pt-5 pb-5">
+              <span>Encargos (R$)</span><br>
               <input disabled id="Charge" type="text" name="" value="" class="inputadmin2" placeholder="Encargos (R$)">
             </div>
             <div class="col-sm pt-5 pb-5">
+              <span>Custo Bruto da Mão-De-Obra (%)</span><br>
               <input disabled id="LaborCostBrute" type="text" name="" value="" class="inputadmin2" placeholder="Custo Bruto da Mão-De-Obra (%)">
             </div>
           </div>
