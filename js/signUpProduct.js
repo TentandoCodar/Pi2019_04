@@ -36,6 +36,16 @@ window.onload = () => {
         const unity = document.getElementById('unity').value;
         const code = document.getElementById('code').value;
 
+        if(!name || !price || !unity || !code) {
+            //Colocar modal aqui
+            alert("Dados incompletos");
+            return null
+        }
+        if(unity.toUpperCase() != "M" && unity.toUpperCase() != "KG") {
+            alert("Unidade incorreta");
+            return null;
+        }
+
         product.save(name, price, unity, code);
     }
 

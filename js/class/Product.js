@@ -24,7 +24,7 @@ class Product extends DomController {
                 code: id
             }).then((resp) => {
 
-
+                window.location.href = "admin_produtos.php";
 
             }).catch((err) => {
                 console.log(err)

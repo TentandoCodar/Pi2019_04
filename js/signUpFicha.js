@@ -123,7 +123,12 @@ window.onload = () => {
         const modelist = document.getElementById('modelist').value;
         const observations = document.getElementById('observations').value;
         const type = document.getElementById('type').value;
-        console.log(type)
+
+        if(!price || !name || !description || !hourAmount || !seal1 || !seal2 || !seal3 || !modelist || !observations || !type) {
+            //Colocar o loadder aqui
+            alert("Dados incompletos");
+            return null;
+        }
         document.getElementById('priceCost').value = parseFloat((laborCost * hourAmount) + materialPrice);
         
         document.getElementById('standartDivisor').value = parseFloat( 1 - (parseFloat(totalComercializationCost / 100) + parseFloat(profitMargin / 100)));

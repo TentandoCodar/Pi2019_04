@@ -27,7 +27,7 @@
         <div class="pt-5 pb-5">
           <h1 style="color: #000; font-weight: 700; font-family: 'GT Walsheim'">INSUMOS</h1>
         </div>
-        <input id="searchValue" type="text" name="" value="" class="inputadmin2 ml-3" style="" placeholder="Pesquise um usuário aqui"/>
+        <input id="searchValue" type="text" name="" value="" class="inputadmin2 ml-3" style="" placeholder="Pesquise um produto aqui"/>
         <i id="searchButton" class="fas fa-search pr-4" style="font-size: 23px; cursor: pointer; color: #000;"></i>
       </div>
       <div class="pt-1 pb-5">

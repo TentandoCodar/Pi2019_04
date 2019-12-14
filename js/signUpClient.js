@@ -5,32 +5,16 @@ window.onload = () => {
     submit.addEventListener('click', () => signUp())
 
     function signUp() {
-        console.log("Ola")
-        const validation = ['name', 'email','phone', 'cnpj'];
-        validation.forEach(element => {
-            const doc = document.getElementById(element).value;
-
-            if(!doc) {
-                return null;
-            }
-            if(element == "cnpj") {
-                if(doc.length != 14) {
-                    alert("CNPJ incompleto")
-                    return null;
-                }
-            }
-            if(element == "phone") {
-                if(doc.length != 11 ) {
-                    alert("Telefone incompleto")
-                    return null;
-                }
-            }
-
-        })
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
         const cnpj = document.getElementById('cnpj').value;
+        if(!email || !name || phone.length < 11 || cnpj.length < 14) {
+            //Colocar o modal aqui
+            alert('Deu errado menor');
+            return null;
+        }
+        
         client.save(name,email,phone,cnpj);
     }
 }

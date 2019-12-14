@@ -6,17 +6,16 @@ window.onload = () => {
     submitButton.addEventListener('click', () => signUp())
 
     function signUp() {
-        const validation = ['name', 'email','phone', 'cnpj'];
-        validation.forEach(element => {
-            const doc = document.getElementById(element).value;
-
-            if(!doc) {
-            }
-        })
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
         const cnpj = document.getElementById('cnpj').value;
+        if(!email || !name || phone.length < 11 || cnpj.length < 14) {
+            //Colocar o modal aqui
+            alert('Deu errado menor');
+            return null;
+        }
+
         provider.save(name,email,phone,cnpj);
     }
 }
