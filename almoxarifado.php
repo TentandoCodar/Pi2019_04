@@ -48,21 +48,21 @@
       <div class="row pt-5 pl-5 pr-5" style="height: 50%">
         <div class="col-sm-12 card_admin pt-5 pb-5 pl-5 pr-5 mt-3 mb-3">
           <h1>Temperatura</h1>
-          <iframe height="300px" width="300px" src='https://thingspeak.com/channels/756771/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&width=auto&height=auto&color=20B2AA&bgcolor=FFFFFF&offset=-3&yaxis= &xaxis= &title= '></iframe>
+          <iframe height="300px" width="100%" style="border:none" src='https://thingspeak.com/channels/756771/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&width=auto&height=auto&color=20B2AA&bgcolor=FFFFFF&offset=-3&yaxis= &xaxis= &title= '></iframe>
         </div>
         <div class="col-sm-12 card_admin pt-5 pb-5 pl-5 pr-5 mt-3 mb-3">
           <h1>Luminosidade</h1>
-          <iframe height="300px" width="300px" src='https://thingspeak.com/channels/756771/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&width=auto&height=auto&color=20B2AA&bgcolor=FFFFFF&offset=-3&yaxis= &xaxis= &title= '></iframe>
+          <iframe height="300px" width="100%" style="border:none" src='https://thingspeak.com/channels/756771/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&width=auto&height=auto&color=20B2AA&bgcolor=FFFFFF&offset=-3&yaxis= &xaxis= &title= '></iframe>
         </div>
       </div>
       <div class="row pl-5 pr-5" style="height: 50%">
         <div class="col-sm-12 card_admin pt-5 pb-5 pl-5 pr-5 mt-3 mb-3">
           <h1>Umidade</h1>
-          <iframe height="300px" width="300px" src='https://thingspeak.com/channels/756771/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&width=auto&height=auto&color=20B2AA&bgcolor=FFFFFF&offset=-3&yaxis= &xaxis= &title= '></iframe>
+          <iframe height="300px" width="100%" style="border:none" src='https://thingspeak.com/channels/756771/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&width=auto&height=auto&color=20B2AA&bgcolor=FFFFFF&offset=-3&yaxis= &xaxis= &title= '></iframe>
         </div>
         <div class="col-sm-12 card_admin pt-5 pb-5 pl-5 pr-5 mt-3 mb-3">
           <h1>Wifi</h1>
-          <iframe height="300px" width="300px" src='https://thingspeak.com/channels/756771/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15?width=373&height=auto&color=20B2AA&bgcolor=FFFFFF&yaxis= &xaxis= &title= '></iframe>
+          <iframe height="300px" width="100%" style="border:none" src='https://thingspeak.com/channels/756771/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15?width=373&height=auto&color=20B2AA&bgcolor=FFFFFF&yaxis= &xaxis= &title= '></iframe>
         </div>
       </div>
     </div>
@@ -74,5 +74,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <?php
+      require 'partes/provider.php';
+      require 'partes/adminProvider.php';
+
+  ?>
+  <script src="js/index.js"></script>
+  <script src="js/almoxarifado.js"></script>
   </body>
 </html>

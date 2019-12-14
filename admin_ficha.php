@@ -54,6 +54,10 @@
           <h1 id="DatasheetName" style="" class="pl-3 pr-3 text_modal_titulo"></h1>
           <div class="pt-5">
             <span class="pt-2">codigo.</span><p id="DatasheetCode" class="text_modal_texto"></p>
+            <span class="pt-2">Preço de venda.</span><p id="DatasheetSalePrice" class="text_modal_texto"></p>
+            <span class="pt-2">Divisor Padrão.</span><p id="DatasheetStandartDivisor" class="text_modal_texto"></p>
+            <span class="pt-2">Tipo.</span><p id="DatasheetType" class="text_modal_texto"></p>
+            <span class="pt-2">Descrição.</span><p id="DatasheetDescription" class="text_modal_texto"></p>
             <span class="pt-2">imagem do produto.</span><br><input type="file" id="file1"></input><br><br>
             <span class="pt-2">imagem do produto.</span><br><input type="file" id="file2"></input><br><br>
             <input id="index" hidden value=""/>

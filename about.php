@@ -76,11 +76,15 @@
         <div class="col-sm h-100 pt-5">
           <p style="font-size: 40px; font-family: 'Super Display'" class="pt-5">Preencha o formulário</p>
           <div class="form_about">
-            <input type="text" name="" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
-            <input type="text" name="" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
-            <input type="text" name="" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+            <form action="sendMail.php" method="POST">
+              <input type="text" name="" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <input type="text" name="" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <input type="text" name="" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <div class="g-recaptcha" data-sitekey="6LfZu8cUAAAAAKG1PbPkunFCM9KLYURQLIi4AOcL"></div>
+              <button onclick="recaptchaResponse()" type="submit" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
+            </form>
           </div>
-          <button type="button" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
+          
           <div class="w-100 position-absolute justify-content-center" style="left: 0; top: -60px;">
             <h1 class="text_about_contact anime_img2">Entre em contato</h1>
           </div>
@@ -150,11 +154,15 @@
         <div class="col-sm h-100">
           <p style="font-size: 30px; font-family: 'Super Display'">Preencha o formulário</p>
           <div class="form_about">
-            <input type="text" name="" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
-            <input type="text" name="" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
-            <input type="text" name="" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+            <form action="sendMail.php" method="POST">
+              <input type="text" name="name" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <input type="text" name="email" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <input type="text" name="msg" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <div  class="g-recaptcha" data-sitekey="6LfZu8cUAAAAAKG1PbPkunFCM9KLYURQLIi4AOcL"></div>
+              <button onclick="recaptchaResponse()" type="submit" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
+            </form>
           </div>
-          <button type="button" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
+          
           <div class="w-100 position-absolute justify-content-center" style="left: 0; top: -70px;">
             <h1 class="text_about_contact anime_img2">Contate-nos</h1>
           </div>
@@ -178,5 +186,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/functions.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <?php
+      require 'partes/provider.php';
+    ?>
+    <script src="js/index.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function recaptchaResponse() {
+        if(grecaptcha.getResponse() == "") {
+          event.preventDefault();
+          return null;
+        }
+        else {
+
+        }
+      }
+    </script>
+
   </body>
 </html>

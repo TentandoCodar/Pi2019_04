@@ -20,12 +20,17 @@ window.onload = () => {
             document.getElementById('Content').innerHTML = "";
             let counter = 0;
             snapshot.forEach(doc => {
+                /*DatasheetSalePrice
+                DatasheetStandartDivisor
+                DatasheetType
+                DatasheetProductAmount
+                DatasheetDescription*/
                 const data = doc.data();
                 image1.push(data.image1);
                 image2.push(data.image2);
                 code.push(data.code);;
                 document.getElementById('Content').innerHTML += `
-                    <div class=" pt-5 pb-5 pr-5 pl-5 mt-4 text-center person" onclick="openDatasheetModal('${data.name}', '${data.code}', '${counter}')">
+                    <div class=" pt-5 pb-5 pr-5 pl-5 mt-4 text-center person" onclick="openDatasheetModal('${data.name}', '${data.code}', '${counter}', '${data.salePrice}', '${data.standartDivisor}', '${data.type}',  '${data.description}')">
                         <i class="fas fa-hard-hat"></i>
                         
                         <h3>${data.name}</h3>

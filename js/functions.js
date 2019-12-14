@@ -276,8 +276,18 @@ function abrirModal(email, name, code, phone = ""){
   document.getElementById('body').classList.add('overflow');
 }
 
-function openDatasheetModal(name,code, id){
+function openDatasheetModal(name,code, id, price, standartDivisor, type, description){
+  /*DatasheetSalePrice
+DatasheetStandartDivisor
+DatasheetType
+DatasheetProductAmount
+DatasheetDescription*/
 
+  document.getElementById('DatasheetSalePrice').innerHTML = price;
+  document.getElementById('DatasheetStandartDivisor').innerHTML = standartDivisor;
+  document.getElementById('DatasheetType').innerHTML = type;
+  
+  document.getElementById('DatasheetDescription').innerHTML = description;
   document.getElementById('index').value = id;
   document.getElementById('DatasheetName').innerHTML = name;
 

@@ -94,15 +94,15 @@
             <p>Categoria</p>
             <div class="collapse" id="collapseExample5" style="background-color: #f2f2f2;">
               <div class="card card-body" style="background-color: #f2f2f2;">
-                <a style="font-size: 13px" class="dropdown-item">blusa</a>
-                <a style="font-size: 13px" class="dropdown-item">body</a>
-                <a style="font-size: 13px" class="dropdown-item">calçados</a>
-                <a style="font-size: 13px" class="dropdown-item">casaco</a>
-                <a style="font-size: 13px" class="dropdown-item">macacão</a>
-                <a style="font-size: 13px" class="dropdown-item">saia</a>
-                <a style="font-size: 13px" class="dropdown-item">short</a>
-                <a style="font-size: 13px" class="dropdown-item">vestido</a>
-                <a style="font-size: 13px" class="dropdown-item">calça</a>
+                <a href="colecao.php?type=blouse" style="font-size: 13px" class="dropdown-item">blusa</a>
+                <a href="colecao.php?type=body" style="font-size: 13px" class="dropdown-item">body</a>
+                <a href="colecao.php?type=shoe" style="font-size: 13px" class="dropdown-item">calçados</a>
+                <a href="colecao.php?type=coat" style="font-size: 13px" class="dropdown-item">casaco</a>
+                <a href="colecao.php?type=overall" style="font-size: 13px" class="dropdown-item">macacão</a>
+                <a href="colecao.php?type=skirt" style="font-size: 13px" class="dropdown-item">saia</a>
+                <a href="colecao.php?type=short" style="font-size: 13px" class="dropdown-item">short</a>
+                <a href="colecao.php?type=dress" style="font-size: 13px" class="dropdown-item">vestido</a>
+                <a href="colecao.php?type=pants" style="font-size: 13px" class="dropdown-item">calça</a>
               </div>
             </div>
           </div>
