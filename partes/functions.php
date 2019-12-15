@@ -28,13 +28,13 @@ function email($senderEmail,$emailReceive,$subject,$message){
 
 	//Dados do e-mail de saida - autenticação
 	$Mailer->Username = $senderEmail;
-	$Mailer->Password = '1234cdgr';
+	$Mailer->Password = 'limitemoral';
 
 	//E-mail remetente (deve ser o mesmo de quem fez a autenticação)
 	$Mailer->From = $senderEmail;
 
 	//Nome do Remetente
-	$Mailer->FromName = 'Teste';
+	$Mailer->FromName = 'Wave';
 
 	//Assunto da mensagem
 	$Mailer->Subject = $subject;

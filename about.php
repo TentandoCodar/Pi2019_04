@@ -77,9 +77,10 @@
           <p style="font-size: 40px; font-family: 'Super Display'; text-align: center" class="pt-5">Preencha o formulário</p>
           <div class="form_about pb-5 pl-5 pr-5">
             <form action="sendMail.php" method="POST">
-              <input type="text" name="" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
-              <input type="text" name="" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
-              <input type="text" name="" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <input type="text" name="name" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <input type="text" name="email" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <input type="text" name="msg" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <p id="recaptchaResponseWeb"></p>
               <div class="g-recaptcha" data-sitekey="6LfZu8cUAAAAAKG1PbPkunFCM9KLYURQLIi4AOcL"></div>
               <button onclick="recaptchaResponse()" type="submit" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
             </form>
@@ -158,6 +159,7 @@
               <input type="text" name="name" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
               <input type="text" name="email" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
               <input type="text" name="msg" value="" placeholder="Mensagem" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
+              <p id="recaptchaResponseCel"></p>
               <div  class="g-recaptcha" data-sitekey="6LfZu8cUAAAAAKG1PbPkunFCM9KLYURQLIi4AOcL"></div>
               <button onclick="recaptchaResponse()" type="submit" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
             </form>
@@ -195,6 +197,12 @@
       function recaptchaResponse() {
         if(grecaptcha.getResponse() == "") {
           event.preventDefault();
+          if(window.innerWidth < 500) {
+            document.getElementById('recaptchaResponseCel').innerHTML = `Preencha os dados corretamente`;
+          }
+          else {
+            document.getElementById('recaptchaResponseWeb').innerHTML = `Preencha os dados corretamente`;
+          }
           return null;
         }
         else {
