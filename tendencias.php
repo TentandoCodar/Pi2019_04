@@ -37,42 +37,42 @@
     <div class="container-fluid vh-100 position-fixed zindex" id="zindexBody">
       <div class="row h-100 text-center">
         <div class="col align-self-center">
-          <img src="img/moca.jpg" alt="" class="img-fluid img_tendencia" id="image_body">
+          <img src="img/body.jpg" alt="" class="img-fluid img_tendencia" id="image_body">
         </div>
       </div>
     </div>
     <div class="container-fluid vh-100 position-fixed zindex" id="zindexBralette">
       <div class="row h-100 text-center">
         <div class="col align-self-center">
-          <img src="img/moca2.jpg" alt="" class="img-fluid img_tendencia" id="image_bralette">
+          <img src="img/floral.jpg" alt="" class="img-fluid img_tendencia" id="image_bralette">
         </div>
       </div>
     </div>
     <div class="container-fluid vh-100 position-fixed zindex" id="zindexCores">
       <div class="row h-100 text-center">
         <div class="col align-self-center">
-          <img src="img/moca.jpg" alt="" class="img-fluid img_tendencia" id="image_cores">
+          <img src="img/coresfortes.jpg" alt="" class="img-fluid img_tendencia" id="image_cores">
         </div>
       </div>
     </div>
     <div class="container-fluid vh-100 position-fixed zindex" id="zindexJeans">
       <div class="row h-100 text-center">
         <div class="col align-self-center">
-          <img src="img/moca.jpg" alt="" class="img-fluid img_tendencia" id="image_jeans">
+          <img src="img/jeans.jpg" alt="" class="img-fluid img_tendencia" id="image_jeans">
         </div>
       </div>
     </div>
     <div class="container-fluid vh-100 position-fixed zindex" id="zindexNeon">
       <div class="row h-100 text-center">
         <div class="col align-self-center">
-          <img src="img/moca.jpg" alt="" class="img-fluid img_tendencia" id="image_neon">
+          <img src="img/neon.jpg" alt="" class="img-fluid img_tendencia" id="image_neon">
         </div>
       </div>
     </div>
     <div class="container-fluid vh-100 position-fixed zindex" id="zindexListras">
       <div class="row h-100 text-center">
         <div class="col align-self-center">
-          <img src="img/moca.jpg" alt="" class="img-fluid img_tendencia" id="image_listras">
+          <img src="img/listras.jpg" alt="" class="img-fluid img_tendencia" id="image_listras">
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@
         <i class="fas fa-times position-absolute pt-5 pr-5 icone_modal_tendencias"  onclick="fecharModalTendencias()"></i>
         <div class="col pl-5 pr-5 pt-5 pb-5">
           <p style="" class="pl-3 pr-3 text_modal_tendencias_titulo" id="text_ID"></p>
-          <p class="pl-3 pr-3 text_modal_texto" id="text_description_ID"></p>
+          <p class="pl-3 pr-3 text_modal_texto_tendencia" id="text_description_ID"></p>
         </div>
       </div>
     </div>
@@ -121,10 +121,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <?php
       require 'partes/provider.php';
-      
+
 
   ?>
   <script src="js/index.js"></script>
-  
+
   </body>
 </html>

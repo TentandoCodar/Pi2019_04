@@ -280,6 +280,11 @@ textarea:focus,
     color: rgba(255, 255, 255, 0.6);
   }
 
+  .text_modal_texto_tendencia{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
   .planilha{
     background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -955,6 +960,21 @@ textarea:focus,
 
   .almoxarifado{
     display: none;
+  }
+
+  .input_about{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    text-align: left;
+    font-family: 'GT Walsheim';
+    background: none;
+  }
+
+  .scroll_cel{
+    overflow-y: scroll;
   }
 
 }
@@ -1839,9 +1859,12 @@ textarea:focus,
     }
 
     .input_about{
-      width: 60%;
-      border: none;
-      text-align: center;
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      text-align: left;
       font-family: 'GT Walsheim';
       background: none;
     }

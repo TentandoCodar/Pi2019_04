@@ -69,6 +69,10 @@ function abrirAbout(){
 function entrarAlmoxarifado(){
   window.location.href = "./almoxarifado.php";
 }
+
+function entrarPWR(){
+  window.location.href = "http://10.10.9.168/pwr/index.php";
+}
 //-------------------------MENUDOIDAO-----------------------------------
 
 const target2 = document.querySelectorAll('.style_menu_pc');
@@ -286,7 +290,7 @@ DatasheetDescription*/
   document.getElementById('DatasheetSalePrice').innerHTML = price;
   document.getElementById('DatasheetStandartDivisor').innerHTML = standartDivisor;
   document.getElementById('DatasheetType').innerHTML = type;
-  
+
   document.getElementById('DatasheetDescription').innerHTML = description;
   document.getElementById('index').value = id;
   document.getElementById('DatasheetName').innerHTML = name;
@@ -535,7 +539,7 @@ function coresimageClose(){
 // ------
 
 function jeansimageOpen(){
-  document.getElementById('image_cores').classList.add('img_tendencia_animate');
+  document.getElementById('image_jeans').classList.add('img_tendencia_animate');
   document.getElementById('body').classList.add('text_tendencia_opacity');
   document.getElementById('bralette').classList.add('text_tendencia_opacity');
   document.getElementById('cores').classList.add('text_tendencia_opacity');
@@ -545,7 +549,7 @@ function jeansimageOpen(){
 }
 
 function jeansimageClose(){
-  document.getElementById('image_cores').classList.remove('img_tendencia_animate');
+  document.getElementById('image_jeans').classList.remove('img_tendencia_animate');
   document.getElementById('body').classList.remove('text_tendencia_opacity');
   document.getElementById('bralette').classList.remove('text_tendencia_opacity');
   document.getElementById('cores').classList.remove('text_tendencia_opacity');
@@ -557,7 +561,7 @@ function jeansimageClose(){
 // ------
 
 function neonimageOpen(){
-  document.getElementById('image_cores').classList.add('img_tendencia_animate');
+  document.getElementById('image_neon').classList.add('img_tendencia_animate');
   document.getElementById('body').classList.add('text_tendencia_opacity');
   document.getElementById('bralette').classList.add('text_tendencia_opacity');
   document.getElementById('cores').classList.add('text_tendencia_opacity');
@@ -567,7 +571,7 @@ function neonimageOpen(){
 }
 
 function neonimageClose(){
-  document.getElementById('image_cores').classList.remove('img_tendencia_animate');
+  document.getElementById('image_neon').classList.remove('img_tendencia_animate');
   document.getElementById('body').classList.remove('text_tendencia_opacity');
   document.getElementById('bralette').classList.remove('text_tendencia_opacity');
   document.getElementById('cores').classList.remove('text_tendencia_opacity');
@@ -579,7 +583,7 @@ function neonimageClose(){
 // ------
 
 function listrasimageOpen(){
-  document.getElementById('image_cores').classList.add('img_tendencia_animate');
+  document.getElementById('image_listras').classList.add('img_tendencia_animate');
   document.getElementById('body').classList.add('text_tendencia_opacity');
   document.getElementById('bralette').classList.add('text_tendencia_opacity');
   document.getElementById('cores').classList.add('text_tendencia_opacity');
@@ -589,7 +593,7 @@ function listrasimageOpen(){
 }
 
 function listrasimageClose(){
-  document.getElementById('image_cores').classList.remove('img_tendencia_animate');
+  document.getElementById('image_listras').classList.remove('img_tendencia_animate');
   document.getElementById('body').classList.remove('text_tendencia_opacity');
   document.getElementById('bralette').classList.remove('text_tendencia_opacity');
   document.getElementById('cores').classList.remove('text_tendencia_opacity');

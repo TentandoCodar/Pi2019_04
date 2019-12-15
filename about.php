@@ -23,7 +23,7 @@
           <h1 class="text_about anime_img">Um pouco sobre nós</h1>
           <p class="subtitlte_about anime">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="position-absolute circulo_about animacaoindex" style="" onmouseover="animation_cirulo()" onmouseout="desanimation_circulo()" id="circle_about">
+        <div class="position-absolute circulo_about animacaoindex" style="" onmouseover="animation_cirulo()" onmouseout="desanimation_circulo()" id="circle_about" onclick="entrarPWR()">
           <p>conheça a <span style="font-family: 'La Belle Aurore'"> PWR</span></p>
         </div>
       </div>
@@ -71,11 +71,11 @@
       </div>
     </div>
 
-    <div class="container-fluid vh-100 contact_container mt-5" style="background: #fff;">
-      <div class="row h-100 align-items-center text-center">
+    <div class="container-fluid h-100 contact_container mt-5 pb-5" style="background: #fff;">
+      <div class="row h-100 align-items-center text-left pb-5">
         <div class="col-sm h-100 pt-5">
-          <p style="font-size: 40px; font-family: 'Super Display'" class="pt-5">Preencha o formulário</p>
-          <div class="form_about">
+          <p style="font-size: 40px; font-family: 'Super Display'; text-align: center" class="pt-5">Preencha o formulário</p>
+          <div class="form_about pb-5 pl-5 pr-5">
             <form action="sendMail.php" method="POST">
               <input type="text" name="" value="" placeholder="Nome" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
               <input type="text" name="" value="" placeholder="Email" class="pb-2 mt-4 mb-4 pt-2 input_about"><br>
@@ -84,8 +84,8 @@
               <button onclick="recaptchaResponse()" type="submit" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
             </form>
           </div>
-          
-          <div class="w-100 position-absolute justify-content-center" style="left: 0; top: -60px;">
+
+          <div class="w-100 position-absolute justify-content-center text-center" style="left: 0; top: -60px;">
             <h1 class="text_about_contact anime_img2">Entre em contato</h1>
           </div>
         </div>
@@ -151,7 +151,7 @@
 
     <div class="container-fluid pt-5 pb-5 container_cel_about" style="background: white">
       <div class="row text-center">
-        <div class="col-sm h-100">
+        <div class="col-sm h-100 pl-4 pr-4">
           <p style="font-size: 30px; font-family: 'Super Display'">Preencha o formulário</p>
           <div class="form_about">
             <form action="sendMail.php" method="POST">
@@ -162,7 +162,7 @@
               <button onclick="recaptchaResponse()" type="submit" name="button" class="botao_menu2 mt-4" style="font-family: 'GT Walsheim'">Enviar</button>
             </form>
           </div>
-          
+
           <div class="w-100 position-absolute justify-content-center" style="left: 0; top: -70px;">
             <h1 class="text_about_contact anime_img2">Contate-nos</h1>
           </div>

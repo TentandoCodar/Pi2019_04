@@ -15,8 +15,10 @@
       </div>
     </div>
     <div class="col pt-5 pb-5 pl-3 pr-3">
-      <h2>Contato</h2>
-      <div class="" style="font-family: 'GT Walsheim Light'">
+      <div class="" style="font-family: 'GT Walsheim Light'"><br>
+        <i class="fab fa-instagram" style="font-size: 20px;"></i><br><br>
+        <i class="fab fa-facebook-f" style="font-size: 20px;"></i><br><br>
+        <i class="fab fa-twitter" style="font-size: 20px;"></i><br><br>
       </div>
     </div>
   </div>
@@ -38,12 +40,11 @@
         <p style="cursor: pointer"><a href="https://www.google.com/maps/d/viewer?mid=17fwxQzP9Z9gJWMYdJY-onepCIFvyP1RH&ll=-21.638530694736463%2C-43.17941059999998&z=11" style="color: #fff;">Localização</a></p>
       </div>
     </div>
-    <div class="col-12 pt-2 pb-2 pl-3 pr-3">
-      <h4>Contato</h4>
+    <div class="col-12 pt-5 pb-2 pl-3 pr-3 text-center">
       <div class="" style="font-family: 'GT Walsheim Light'">
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
-        <p>wavestore@gmail.com</p>
+        <i class="fab fa-instagram pl-3 pr-3" style="font-size: 20px;"></i>
+        <i class="fab fa-facebook-f pl-3 pr-3" style="font-size: 20px;"></i>
+        <i class="fab fa-twitter pl-3 pr-3" style="font-size: 20px;"></i>
       </div>
     </div>
   </div>

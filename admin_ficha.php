@@ -47,22 +47,24 @@
 
     <!-- ________________MODAL COM INFO DOS CLIENTES_____________________ -->
 
-    <div class="container-fluid position-fixed vh-100 vw-100 modal_admin" id="modal_products">
-      <div class="row h-100 pt-4 pb-3 align-items-center text-center style_modal">
+    <div class="container-fluid position-fixed vh-100 vw-100 modal_admin style_modal scroll_cel" id="modal_products">
+      <div class="row h-100 pt-4 pb-3 align-items-center text-center">
         <i class="fas fa-times position-absolute icone_modal" onclick="fecharModalProducts()"></i>
-        <div id="ModalDataContent" class="col pl-5 pr-5 pt-5 pb-5">
+        <div id="ModalDataContent" class="col-sm pl-5 pr-5 pt-5 pb-5">
           <h1 id="DatasheetName" style="" class="pl-3 pr-3 text_modal_titulo"></h1>
           <div class="pt-5">
-            <span class="pt-2">codigo.</span><p id="DatasheetCode" class="text_modal_texto"></p>
-            <span class="pt-2">Preço de venda.</span><p id="DatasheetSalePrice" class="text_modal_texto"></p>
-            <span class="pt-2">Divisor Padrão.</span><p id="DatasheetStandartDivisor" class="text_modal_texto"></p>
-            <span class="pt-2">Tipo.</span><p id="DatasheetType" class="text_modal_texto"></p>
-            <span class="pt-2">Descrição.</span><p id="DatasheetDescription" class="text_modal_texto"></p>
-            <span class="pt-2">imagem do produto.</span><br><input type="file" id="file1"></input><br><br>
-            <span class="pt-2">imagem do produto.</span><br><input type="file" id="file2"></input><br><br>
+            <span class="pt-2">descrição.</span><p id="DatasheetDescription" class="text_modal_texto"></p>
+            <span class="pt-2">imagem do produto.</span><br><input type="file" id="file1" style="font-size: 10px"></input><br><br>
+            <span class="pt-2">imagem do produto.</span><br><input type="file" id="file2" style="font-size: 10px"></input><br><br>
             <input id="index" hidden value=""/>
             <button id="submitModalButton" class="botao_modal">Editar</button>
           </div>
+        </div>
+        <div class="col-sm">
+          <span class="pt-2">codigo.</span><p id="DatasheetCode" class="text_modal_texto"></p>
+          <span class="pt-2">preço de venda.</span><p id="DatasheetSalePrice" class="text_modal_texto"></p>
+          <span class="pt-2">divisor padrão.</span><p id="DatasheetStandartDivisor" class="text_modal_texto"></p>
+          <span class="pt-2">tipo.</span><p id="DatasheetType" class="text_modal_texto"></p>
         </div>
       </div>
     </div>
