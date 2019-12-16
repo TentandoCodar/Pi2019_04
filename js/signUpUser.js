@@ -14,7 +14,11 @@ window.onload = () => {
 
         if(!email || !name || password.length < 6) {
             //Apresentar o modal aqui
-            alert("Deu errado")
+            abrirErro()
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
             return null;
         }
         else {

@@ -40,9 +40,9 @@ window.onload = () => {
         for(let i = 0; i < productAmount; i++) {
 
             document.getElementById("ProductsSelect").innerHTML += `
-            <div class="col-6 pt-3 pb-3">
+            <div class="col-6 pt-3 pb-3 pr-5">
               <span>Fornecedor</span><br>
-                <select id='select${i}'>
+                <select class="input_moral" id='select${i}'>
 
                 </select>
             </div>
@@ -134,9 +134,30 @@ window.onload = () => {
         const observations = document.getElementById('observations').value;
         const type = document.getElementById('type').value;
 
-        if(!price || !name || !description || !hourAmount || !seal1 || !seal2 || !seal3 || !modelist || !observations || !type) {
-            //Colocar o loadder aqui
-            alert("Dados incompletos");
+        //Area da ficha
+        if(!name || !description || !type) {
+            abrirErro("Ocorreu um erro nos dados da ficha")
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
+            return null;
+            
+        }
+        else if(!materialPrice) {
+            abrirErro("Por favor coloque o numero de produtos")
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
+            return null;
+        }
+        else if(!seal1 || !seal2 || !seal3 || !modelist || !hourAmount) {
+            abrirErro("Por favor coloque as informações da franquia")
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
             return null;
         }
         document.getElementById('priceCost').value = parseFloat((laborCost * hourAmount) + materialPrice);
@@ -181,6 +202,52 @@ window.onload = () => {
     function signUpImages() {
         const file1 = document.getElementById('file1').files[0];
         const file2 = document.getElementById('file2').files[0];
+        if(!file1 || !file2) {
+            abrirErro("Por favor selecione as imagens");
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
+            return null;
+        }
+        const productsCodeArray = getDataOfProductSelect();
+        const price = materialPrice;
+        const name = document.getElementById('name').value;
+        const description = document.getElementById('description').value;
+        const hourAmount = document.getElementById('hourAmount').value;
+        const seal1 = document.getElementById('seal1').value;
+        const seal2 = document.getElementById('seal2').value;
+        const seal3 = document.getElementById('seal3').value;
+        const modelist = document.getElementById('modelist').value;
+        const observations = document.getElementById('observations').value;
+        const type = document.getElementById('type').value;
+
+        //Area da ficha
+        if(!name || !description || !type) {
+            abrirErro("Ocorreu um erro nos dados da ficha")
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
+            return null;
+            
+        }
+        else if(!materialPrice) {
+            abrirErro("Por favor coloque o numero de produtos")
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
+            return null;
+        }
+        else if(!seal1 || !seal2 || !seal3 || !modelist || !hourAmount) {
+            abrirErro("Por favor coloque as informações da franquia")
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
+            return null;
+        }
         const storage = firebase.storage();
         const storageRef = storage.ref();
         let originalName = file1.name.split('.');

@@ -38,11 +38,19 @@ window.onload = () => {
 
         if(!name || !price || !unity || !code) {
             //Colocar modal aqui
-            alert("Dados incompletos");
-            return null
+            abrirErro()
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
+            return null;
         }
         if(unity.toUpperCase() != "M" && unity.toUpperCase() != "KG") {
-            alert("Unidade incorreta");
+            abrirErro("Unidade incorreta")
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
             return null;
         }
 

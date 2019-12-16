@@ -41,7 +41,11 @@ class User extends DomController{
         this.auth.signInWithEmailAndPassword(email,password).then(() => {
             window.location.href = "index.php";
         }).catch((err) => {
-            console.log(err);
+            abrirErro("Você não conseguiu se logar, tente novamente");
+            
+            setTimeout(() => {
+                fecharErro();
+            }, 1500)
         })
     }
 

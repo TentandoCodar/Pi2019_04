@@ -833,6 +833,10 @@ textarea:focus,
     z-index: 220;
   }
 
+  .input_moral{
+    width: 30%;
+  }
+
   .text_tendencia_opacity{
     font-size: 35px;
     font-family: 'Super Display';
@@ -977,6 +981,29 @@ textarea:focus,
     overflow-y: scroll;
   }
 
+  .modal_erro{
+    z-index: 2000;
+    transform: translate3d(-100%, 0, 0);
+    transition: 0.86s;
+    top: 0;
+  }
+
+  .modal_erro_animate{
+    z-index: 2000;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    transition: 0.86s;
+    padding-top: 40%;
+    padding-bottom: 40%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .icone_modal_erro{
+    top: 10px;
+    right: 10px;
+  }
+
 }
 
 /* ----------------------COMPUTADOR------------------------------------- */
@@ -1035,6 +1062,11 @@ textarea:focus,
       opacity: 1;
       color: #fff;
       transition: 0.6s;
+    }
+
+    .icone_modal_erro{
+      top: 10px;
+      right: 10px;
     }
 
     .style_menu_pc_animate{
@@ -1955,7 +1987,10 @@ textarea:focus,
       top: 0;
       transform: translate3d(0, 0, 0);
       transition: 0.86s;
-      padding: 10%;
+      padding-top: 15%;
+      padding-bottom: 15%;
+      padding-left: 30%;
+      padding-right: 30%;
     }
 
     [data-text_index]{

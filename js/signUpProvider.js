@@ -12,7 +12,11 @@ window.onload = () => {
         const cnpj = document.getElementById('cnpj').value;
         if(!email || !name || phone.length < 11 || cnpj.length < 14) {
             //Colocar o modal aqui
-            alert('Deu errado menor');
+            abrirErro()
+            
+            setTimeout(() => {
+                fecharErro()
+            }, 1500)
             return null;
         }
 

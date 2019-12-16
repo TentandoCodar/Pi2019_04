@@ -53,7 +53,7 @@
     <?php
       require 'partes/provider.php';
       require 'partes/adminProvider.php';
-
+      require 'partes/dadoincorreto.php';
     ?>
     <script src="js/class/Providers.js"></script>
     <script src="js/signUpProvider.js"></script>

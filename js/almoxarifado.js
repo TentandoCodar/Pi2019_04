@@ -3,10 +3,12 @@ window.onload = () => {
     callDataOfUrls()
 
     async function callDataOfUrls() {
+        const count = 0;
         urls.forEach(async (doc) => {
             const data = await fetch(doc);
             const value = await data.text();
             console.log(value);
+            count++;
         });
     
         

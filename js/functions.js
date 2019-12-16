@@ -340,13 +340,23 @@ function abrirHelp(){
   document.getElementById('modal_help').classList.add('modal_help_animate');
   document.getElementById('escurecer').classList.add('escurecer_animate');
   document.getElementById('body').classList.add('overflow');
-
 }
 
 function fecharModalHelp(){
   document.getElementById('modal_help').classList.remove('modal_help_animate');
   document.getElementById('escurecer').classList.remove('escurecer_animate');
   document.getElementById('body').classList.remove('overflow');
+}
+
+function abrirErro(erroDescription = "Dados incompletos"){
+  document.getElementById('ErroDescription').innerHTML = erroDescription;
+  document.getElementById('modal_erro').classList.add('modal_erro_animate');
+  document.getElementById('escurecer').classList.add('escurecer_animate');
+}
+
+function fecharErro(){
+  document.getElementById('modal_erro').classList.remove('modal_erro_animate');
+  document.getElementById('escurecer').classList.remove('escurecer_animate');
 }
 
 // -------------------------------ANIMATIONS INDEXX--------------------------------
