@@ -37,7 +37,19 @@ window.onload = () => {
                 Transportation = data.Transportation;
                 FixedCosts = data.FixedCosts;
                 ProfitMargin = data.ProfitMargin;
-                Total = "";
+                Total = (
+                    parseFloat(WithDraw) +
+                    parseFloat(Theft) +
+                    parseFloat(OperationalExpenses) + 
+                    parseFloat(AdministrativeExpenses) + 
+                    parseFloat(FinancialExpenses) +
+                    parseFloat(DiverseExpenses) +
+                    parseFloat(Comissions) +
+                    parseFloat(Investments) +
+                    parseFloat(Transportation) +
+                    parseFloat(FixedCosts) +
+                    parseFloat(ProfitMargin)
+                );
                 PaymentSheetBrute = data.PaymentSheetBrute;
                 ChargePercentage = data.ChargePercentage;
                 Charge = PaymentSheetBrute * ChargePercentage / 100;;
@@ -74,7 +86,19 @@ window.onload = () => {
         Transportation = document.getElementById('Transportation').value;
         FixedCosts = document.getElementById('FixedCosts').value;
         ProfitMargin = document.getElementById('ProfitMargin').value;
-        Total = document.getElementById('Total').value;
+        Total = Total = (
+            parseFloat(WithDraw) +
+            parseFloat(Theft) +
+            parseFloat(OperationalExpenses) + 
+            parseFloat(AdministrativeExpenses) + 
+            parseFloat(FinancialExpenses) +
+            parseFloat(DiverseExpenses) +
+            parseFloat(Comissions) +
+            parseFloat(Investments) +
+            parseFloat(Transportation) +
+            parseFloat(FixedCosts) +
+            parseFloat(ProfitMargin)
+        );
         PaymentSheetBrute = document.getElementById('PaymentSheetBrute').value;
         ChargePercentage = document.getElementById('ChargePercentage').value;
         Charge = PaymentSheetBrute * ChargePercentage / 100;

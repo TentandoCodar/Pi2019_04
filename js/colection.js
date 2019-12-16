@@ -19,7 +19,7 @@ window.onload = () => {
                         <img src="${data.image1}" alt="" class="img-fluid rounded mx-auto d-block">
                         <div class="pt-2 pb-2">
                         <span style="color: #6b6b6b; font-size: 14px;">${data.name}</span><br>
-                        <span>R$${Math.ceil(data.salePrice)}</span>
+                        <span>R$${parseFloat(data.salePrice).toFixed(2)}</span>
                         </div>
                     </div>
                     `;

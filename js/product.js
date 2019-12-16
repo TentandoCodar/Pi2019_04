@@ -18,8 +18,8 @@ window.onload = () => {
             document.getElementById('ProductImage').src = "";
         firestore.collection('Datasheet').doc(id).get().then((doc) => {
             const data = doc.data();
-            document.getElementById('Price').innerHTML = 'R$' + Math.ceil(data.salePrice);
-            document.getElementById('Price_cel').innerHTML = 'R$' + Math.ceil(data.salePrice);
+            document.getElementById('Price').innerHTML = 'R$' + parseFloat(data.salePrice).toFixed(2);
+            document.getElementById('Price_cel').innerHTML = 'R$' + parseFloat(data.salePrice).toFixed(2);
             document.getElementById('Name').innerHTML = data.name;
             document.getElementById('Name_cel').innerHTML = data.name;
             document.getElementById('Description').innerHTML = data.description;
