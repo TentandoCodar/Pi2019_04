@@ -70,15 +70,15 @@
     <div class="almoxarifado" onclick="entrarAlmoxarifado()">
       <div class="pl-3 pr-3" style="float: left; ">
         <i class="fas fa-thermometer-three-quarters"></i>
-        <p id="0">Temp</p>
+        <p id="0w"></p>
       </div>
       <div class="pl-3 pr-3" style="float: left">
         <i class="fas fa-lightbulb"></i>
-        <p id="1">Wifi</p>
+        <p id="1w"></p>
       </div>
       <div class="pl-3 pr-3" style="float: left;">
         <i class="fas fa-tint"></i>
-        <p id="2">Light</p>
+        <p id="2w"></p>
       </div>
     </div>
 

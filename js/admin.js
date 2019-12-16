@@ -5,13 +5,21 @@ window.onload = () => {
     async function callDataOfUrls() {
         let count = 0;
         let data = await fetch(urls[0]);
-        values.push(await data.text())
+        let valuePlaceholder = await data.text();
+        values.push(parseFloat(valuePlaceholder).toFixed(2))
         data = await fetch(urls[1]);
         values.push(await data.text())
         data = await fetch(urls[2]);
         values.push(await data.text())
-        for(let i = 0;i < 3; i++) {
-            document.getElementById(`${i}`).innerHTML = values[i];
+        if(window.innerWidth < 500) {
+            for(let i = 0;i < 3; i++) {
+                document.getElementById(`${i}`).innerHTML = values[i];
+            }
+        }
+        else {
+            for(let i = 0;i < 3; i++) {
+                document.getElementById(`${i}w`).innerHTML = values[i];
+            }
         }
         
     
